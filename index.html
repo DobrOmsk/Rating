@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Рейтинг волонтеров</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Vue.js 3 -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>🏆 Рейтинг волонтеров 2024</h1>
+      <div class="controls">
+        <input 
+          v-model="searchQuery" 
+          placeholder="Поиск по имени" 
+          type="search"
+        >
+        <button @click="sortBy('name')">Сортировать по имени</button>
+        <button @click="sortBy('points')">Сортировать по баллам</button>
+      </div>
+    </header>
+
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>ФИО</th>
+            <th>Мероприятия</th>
+            <th>Баллы</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="(volunteer, index) in filteredVolunteers" :key="volunteer.id">
+            <td>{{ index + 1 }}</td>
+            <td>{{ volunteer.name }}</td>
+            <td>{{ volunteer.events }}</td>
+            <td>{{ volunteer.points }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <footer>
+      <p>Обновлено: {{ lastUpdated }}</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
