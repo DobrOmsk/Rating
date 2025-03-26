@@ -26,7 +26,8 @@ jobs:
              | {
                  "name": $input[0],
                  "events": $input[1] | tonumber,
-                 "points": $input[2] | tonumber
+                 "points": $input[2] | tonumber,
+                 "place": $input[3] | tonumber
                }
             ]
           ' < data.csv > data.json
