@@ -16,7 +16,7 @@ jobs:
       - name: Fetch Google Sheets data
         run: |
           # Скачиваем CSV из вашей таблицы
-          curl -L "https://docs.google.com/spreadsheets/d/1J1GEEx5o7JiZGz60MGQw7bNxNYBJyuIVDASf-uNs_To/export?format=csv" > data.csv
+          curl -L "https://docs.google.com/spreadsheets/d/1J1GEEx5o7JiZGz60MGQw7bNxNYBJyuIVDASf-uNs_To/edit?usp=sharing/export?format=csv" > data.csv
           
           # Конвертируем CSV в JSON
           jq -Rsn '
