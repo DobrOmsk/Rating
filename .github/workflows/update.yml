@@ -2,15 +2,35 @@ name: Update Data
 on:
   schedule:
     - cron: '0 * * * *'  # Каждый час
+  workflow_dispatch:     # Можно запустить вручную
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Fetch new data
+      
+      - name: Install dependencies
+        run: sudo apt-get install -y jq  # Для обработки CSV
+
+      - name: Fetch Google Sheets data
         run: |
-          curl "https://ваш-api-для-данных" > data.json
+          # Скачиваем CSV из вашей таблицы
+          curl -L "https://docs.google.com/spreadsheets/d/1J1GEEx5o7JiZGz60MGQw7bNxNYBJyuIVDASf-uNs_To/export?format=csv" > data.csv
+          
+          # Конвертируем CSV в JSON
+          jq -Rsn '
+            [inputs
+             | . / "\n"
+             | (.[] | select(length > 0) | . / ",") as $input
+             | {
+                 "name": $input[0],
+                 "events": $input[1] | tonumber,
+                 "points": $input[2] | tonumber
+               }
+            ]
+          ' < data.csv > data.json
+
       - name: Commit changes
         run: |
           git config --global user.name "GitHub Bot"
