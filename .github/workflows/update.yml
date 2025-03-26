@@ -2,40 +2,54 @@ name: Update Data
 on:
   schedule:
     - cron: '0 * * * *'  # Каждый час
-  workflow_dispatch:     # Можно запустить вручную
+  workflow_dispatch:     # Ручной запуск
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
-      - name: Install dependencies
-        run: sudo apt-get install -y jq  # Для обработки CSV
 
-      - name: Fetch Google Sheets data
+      - name: Install dependencies
         run: |
-          # Скачиваем CSV из вашей таблицы
-          curl -L "https://docs.google.com/spreadsheets/d/1J1GEEx5o7JiZGz60MGQw7bNxNYBJyuIVDASf-uNs_To/edit?usp=sharing/export?format=csv" > data.csv
+          sudo apt-get update
+          sudo apt-get install -y iconv jq
+
+      - name: Fetch and convert data
+        run: |
+          # Скачиваем CSV и исправляем кодировку
+          curl -L "https://docs.google.com/spreadsheets/d/1J1GEEx5o7JiZGz60MGQw7bNxNYBJyuIVDASf-uNs_To/export?format=csv" | iconv -f WINDOWS-1251 -t UTF-8 > data.csv
           
-          # Конвертируем CSV в JSON
-          jq -Rsn '
+          # Отладочная информация (можно удалить после проверки)
+          echo "=== Первые 5 строк CSV ==="
+          head -n 5 data.csv
+          echo "========================="
+          
+          # Конвертируем в JSON с обработкой ошибок
+          jq -Rn '
             [inputs
-             | . / "\n"
-             | (.[] | select(length > 0) | . / ",") as $input
+             | select(length > 0)
+             | gsub("\""; "") | split(",")
              | {
-                 "name": $input[0],
-                 "events": $input[1] | tonumber,
-                 "points": $input[2] | tonumber,
-                 "place": $input[3] | tonumber
+                 "name": .[0],
+                 "events": (.[1] | try tonumber catch 0),
+                 "points": (.[2] | try tonumber catch 0),
+                 "place": (.] | try tonumber catch 0)
                }
             ]
-          ' < data.csv > data.json
+          ' < data.csv > data.json || echo "Ошибка при конвертации в JSON"
+
+          # Проверяем результат
+          echo "=== Содержимое JSON ==="
+          cat data.json
+          echo "======================="
 
       - name: Commit changes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config --global user.name "GitHub Bot"
-          git config --global user.email "bot@github.com"
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
           git add data.json
-          git commit -m "Auto-update data"
+          git diff --cached --quiet || git commit -m "Auto-update data"
           git push
