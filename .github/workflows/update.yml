@@ -45,7 +45,16 @@ jobs:
             echo "Ошибка: data.json пуст или не создан"
             exit 1
           fi
-
+          
+      - name: Debug info
+        run: |
+          echo "=== CSV head ==="
+          head data_clean.csv
+          echo "=== JSON ==="
+          cat data.json
+          echo "=== Git status ==="
+          git status -uno
+          
       - name: Commit and push changes
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
