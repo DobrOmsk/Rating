@@ -5,21 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Рейтинг волонтеров</title>
   <link rel="stylesheet" href="styles.css">
-  <!-- Vue.js 3 -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
   <div id="app">
     <header>
-      <h1>🏆 Рейтинг волонтеров 2024</h1>
+      <h1>🏆 Рейтинг волонтеров</h1>
       <div class="controls">
-        <input 
-          v-model="searchQuery" 
-          placeholder="Поиск по имени" 
-          type="search"
-        >
-        <button @click="sortBy('name')">Сортировать по имени</button>
-        <button @click="sortBy('points')">Сортировать по баллам</button>
+        <input v-model="searchQuery" placeholder="Поиск по имени" type="search">
+        <button @click="sortBy('name')">По имени</button>
+        <button @click="sortBy('points')">По баллам</button>
       </div>
     </header>
 
@@ -45,7 +40,7 @@
     </main>
 
     <footer>
-      <p>Обновлено: {{ lastUpdated }}</p>
+      Обновлено: {{ new Date().toLocaleString() }}
     </footer>
   </div>
 
