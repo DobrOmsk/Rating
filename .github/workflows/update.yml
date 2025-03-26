@@ -1,8 +1,8 @@
 name: Update Volunteer Data
 on:
   schedule:
-    - cron: '0 * * * *'
-  workflow_dispatch:
+    - cron: '0 * * * *'  # Каждый час
+  workflow_dispatch:     # Ручной запуск
 
 jobs:
   update:
@@ -13,30 +13,35 @@ jobs:
       - name: Setup environment
         run: |
           sudo apt-get update
-          # Устанавливаем libc-bin вместо iconv (содержит iconv в Ubuntu 24.04)
-          sudo apt-get install -y libc-bin jq
-          # Проверяем наличие iconv
-          if ! command -v iconv &> /dev/null; then
-            echo "::error::iconv не установлен!"
+          # Устанавливаем необходимые пакеты
+          sudo apt-get install -y jq
+          # Проверяем наличие iconv (он теперь часть glibc)
+          if ! /usr/bin/iconv --version > /dev/null 2>&1; then
+            echo "::error::iconv не найден в системе"
             exit 1
           fi
 
       - name: Download and process data
         run: |
-          # Скачиваем данные с повторами
+          # Скачиваем данные (3 попытки)
           for i in {1..3}; do
             curl -L -f "https://docs.google.com/spreadsheets/d/1J1GEEx5o7JiZGz60MGQw7bNxNYBJyuIVDASf-uNs_To/export?format=csv" -o data.csv && break || sleep 5
-          done
+          done || { echo "::error::Не удалось скачать CSV"; exit 1; }
 
-          # Конвертируем кодировку (используем gnu-iconv)
+          # Конвертируем кодировку (используем встроенный iconv)
           /usr/bin/iconv -f WINDOWS-1251 -t UTF-8 data.csv > data_clean.csv || {
-            echo "::error::Ошибка конвертации кодировки"
-            exit 1
+            echo "::warning::Пробуем альтернативную кодировку..."
+            /usr/bin/iconv -f CP1251 -t UTF-8 data.csv > data_clean.csv || {
+              echo "::error::Ошибка конвертации кодировки"
+              exit 1
+            }
           }
 
-          # Проверяем первые строки (для отладки)
+          # Отладочная информация
           echo "=== Первые 5 строк CSV ==="
           head -n 5 data_clean.csv
+          echo "=== Размер файла ==="
+          ls -la data_clean.csv
           echo "========================="
 
           # Конвертируем в JSON
@@ -58,7 +63,7 @@ jobs:
 
           # Проверяем результат
           if [ ! -s data.json ]; then
-            echo "::error::data.json пуст!"
+            echo "::error::Получен пустой JSON"
             exit 1
           fi
 
