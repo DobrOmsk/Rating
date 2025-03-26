@@ -1,8 +1,8 @@
 name: Update Volunteer Data
 on:
   schedule:
-    - cron: '0 * * * *'  # Каждый час
-  workflow_dispatch:     # Ручной запуск
+    - cron: '0 * * * *'
+  workflow_dispatch:
 
 jobs:
   update:
@@ -13,20 +13,33 @@ jobs:
       - name: Setup environment
         run: |
           sudo apt-get update
-          sudo apt-get install -y iconv jq
+          # Устанавливаем libc-bin вместо iconv (содержит iconv в Ubuntu 24.04)
+          sudo apt-get install -y libc-bin jq
+          # Проверяем наличие iconv
+          if ! command -v iconv &> /dev/null; then
+            echo "::error::iconv не установлен!"
+            exit 1
+          fi
 
       - name: Download and process data
         run: |
-          # Скачиваем данные (с повтором при ошибке)
+          # Скачиваем данные с повторами
           for i in {1..3}; do
             curl -L -f "https://docs.google.com/spreadsheets/d/1J1GEEx5o7JiZGz60MGQw7bNxNYBJyuIVDASf-uNs_To/export?format=csv" -o data.csv && break || sleep 5
           done
 
-          # Конвертируем кодировку и очищаем данные
-          iconv -f WINDOWS-1251 -t UTF-8 data.csv > data_clean.csv
-          sed -i 's/[^[:print:]\t]//g' data_clean.csv  # Удаляем непечатные символы
+          # Конвертируем кодировку (используем gnu-iconv)
+          /usr/bin/iconv -f WINDOWS-1251 -t UTF-8 data.csv > data_clean.csv || {
+            echo "::error::Ошибка конвертации кодировки"
+            exit 1
+          }
 
-          # Конвертируем в JSON с обработкой ошибок
+          # Проверяем первые строки (для отладки)
+          echo "=== Первые 5 строк CSV ==="
+          head -n 5 data_clean.csv
+          echo "========================="
+
+          # Конвертируем в JSON
           jq -Rn '
             [inputs
              | select(length > 0)
@@ -36,34 +49,30 @@ jobs:
                  "name": .[0],
                  "events": (.[1] | try tonumber catch 0),
                  "points": (.[2] | try tonumber catch 0),
-                 "placr": (.[3] | try tonumber catch 0),
+                 "place": (.[3] | try tonumber catch 0)
                }
-            ]' < data_clean.csv > data.json
+            ]' < data_clean.csv > data.json || {
+              echo "::error::Ошибка при конвертации в JSON"
+              exit 1
+            }
 
           # Проверяем результат
           if [ ! -s data.json ]; then
-            echo "Ошибка: data.json пуст или не создан"
+            echo "::error::data.json пуст!"
             exit 1
           fi
-          
-      - name: Debug info
-        run: |
-          echo "=== CSV head ==="
-          head data_clean.csv
-          echo "=== JSON ==="
-          cat data.json
-          echo "=== Git status ==="
-          git status -uno
-          
+
       - name: Commit and push changes
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Проверяем, есть ли изменения
-          git diff --no-patch --exit-code data.json || {
+          # Проверяем изменения
+          if git diff --no-patch --exit-code data.json; then
+            echo "Нет изменений для коммита"
+          else
             git config --global user.name "GitHub Actions"
             git config --global user.email "actions@github.com"
             git add data.json
-            git commit -m "Auto-update volunteer data $(date +'%Y-%m-%d %H:%M')"
-            git push origin HEAD
-          }
+            git commit -m "Auto-update: $(date +'%Y-%m-%d %H:%M')"
+            git push
+          fi
