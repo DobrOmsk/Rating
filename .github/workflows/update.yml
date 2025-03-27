@@ -18,56 +18,41 @@ jobs:
       - name: Install dependencies
         run: pip install pandas
 
-      - name: Download and debug data
+      - name: Download data
         run: |
           curl -L "https://docs.google.com/spreadsheets/d/e/2PACX-1vT1ZqIl-YoI4bkefOkLBYPj3QcVEsXgnnhfW65ku2gvNj65ungX5tIpzbRo9DMTMaqSlvats--5e5V_/pub?gid=0&single=true&output=csv" -o data.csv
-          echo "=== RAW CSV HEADER ==="
-          head -n 1 data.csv
-          echo "=== CSV SAMPLE DATA ==="
-          head -n 5 data.csv | awk -F',' '{print $1,$2,$3,$4}'
+          echo "=== Проверка данных ==="
+          head -n 5 data.csv
+          echo "=== Кодировка файла ==="
+          file -i data.csv
 
-      - name: Convert to JSON
+      - name: Process data
         run: |
-          python <<"EOF"
+          python <<EOF
           import pandas as pd
-          import json
+          import codecs
           
-          # Чтение CSV с обработкой различных форматов
-          df = pd.read_csv('data.csv', encoding='utf-8-sig')
+          # Чтение CSV с явным указанием кодировки
+          with codecs.open('data.csv', 'r', encoding='utf-8-sig') as f:
+              df = pd.read_csv(f)
           
-          # Автоматическое определение колонок
-          columns_map = {
-              'place': ['Место', 'место', 'Place'],
-              'name': ['ФИО', 'фио', 'FIO', 'Имя'],
-              'events': ['Добрые дела', 'добрые дела', 'Events'],
-              'points': ['Баллы', 'баллы', 'Points']
-          }
-          
-          # Поиск соответствий
-          actual_columns = {}
-          for target, possible in columns_map.items():
-              for col in possible:
-                  if col in df.columns:
-                      actual_columns[target] = col
-                      break
-          
-          if len(actual_columns) != 4:
-              print("ERROR: Не найдены все необходимые колонки")
-              print("Доступные колонки:", df.columns.tolist())
+          # Проверка колонок
+          required_columns = ['Место', 'ФИО', 'Добрые дела', 'Баллы']
+          if not all(col in df.columns for col in required_columns):
+              print("Ошибка: Не найдены все необходимые колонки")
+              print("Найдены:", df.columns.tolist())
               exit(1)
           
           # Обработка данных
-          df = df[list(actual_columns.values())]
-          df.columns = actual_columns.keys()
+          df = df[required_columns]
+          df.columns = ['place', 'name', 'events', 'points']
           df = df.dropna()
           df['place'] = df['place'].astype(int)
           df = df.sort_values('place')
           
           # Сохранение
-          with open('data.json', 'w', encoding='utf-8') as f:
-              json.dump(df.to_dict('records'), f, ensure_ascii=False, indent=2)
-          
-          print("Успешно обработано записей:", len(df))
+          df.to_json('data.json', orient='records', force_ascii=False, indent=2)
+          print(f"Успешно обработано {len(df)} записей")
           EOF
 
       - name: Commit and push
