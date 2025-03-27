@@ -2,8 +2,14 @@
   {
     "place":1,
     "name":"впавп",
-    "events":23,
+    "events":5555,
     "points":1752
+  },
+  {
+    "place":5,
+    "name":"ваправ",
+    "events":255,
+    "points":5218
   },
   {
     "place":2,
@@ -22,12 +28,6 @@
     "name":"авпоад",
     "events":46,
     "points":4687678
-  },
-  {
-    "place":5,
-    "name":"ваправ",
-    "events":255,
-    "points":5218
   },
   {
     "place":6,
