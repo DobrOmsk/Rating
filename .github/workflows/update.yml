@@ -35,13 +35,18 @@ jobs:
 
       - name: Update file via API
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PAT: ${{ secrets.PAT }}  # Убедитесь, что создали этот секрет!
         run: |
           python -c "
           from github import Github
           import os
           
-          token = os.environ['GH_TOKEN']
+          # Получаем токен из переменных окружения
+          token = os.environ['PAT']
+          if not token:
+              print('Error: PAT token is empty!')
+              exit(1)
+              
           g = Github(token)
           repo = g.get_repo('DobrOmsk/Rating')
           
@@ -49,15 +54,25 @@ jobs:
               content = f.read()
           
           try:
+              # Пытаемся обновить существующий файл
               contents = repo.get_contents('data.json')
               repo.update_file(
                   path='data.json',
-                  message='Automatic data update $(date +\"%Y-%m-%d %H:%M\")',
+                  message='Automatic data update',
                   content=content,
                   sha=contents.sha
               )
               print('File successfully updated via API')
           except Exception as e:
-              print(f'Error updating file: {str(e)}')
-              exit(1)
+              # Если файла нет, создаем новый
+              if '404' in str(e):
+                  repo.create_file(
+                      path='data.json',
+                      message='Create data file',
+                      content=content
+                  )
+                  print('File successfully created via API')
+              else:
+                  print(f'Error: {str(e)}')
+                  exit(1)
           "
