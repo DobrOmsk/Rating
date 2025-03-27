@@ -5,8 +5,8 @@ createApp({
     return {
       volunteers: [],
       searchQuery: '',
-      sortField: 'place',  // Сортировка по месту по умолчанию
-      sortDirection: 'asc' // По возрастанию (1, 2, 3...)
+      sortField: 'place',
+      sortDirection: 'asc'
     }
   },
   computed: {
@@ -20,10 +20,13 @@ createApp({
         );
       }
       
-      // Автоматическая сортировка по месту
       return result.sort((a, b) => {
-        if (a.place > b.place) return 1;
-        if (a.place < b.place) return -1;
+        if (a[this.sortField] > b[this.sortField]) {
+          return this.sortDirection === 'asc' ? 1 : -1;
+        }
+        if (a[this.sortField] < b[this.sortField]) {
+          return this.sortDirection === 'asc' ? -1 : 1;
+        }
         return 0;
       });
     }
@@ -33,6 +36,13 @@ createApp({
       try {
         const response = await fetch('data.json?v=' + new Date().getTime());
         this.volunteers = await response.json();
+        
+        // Форматирование чисел
+        this.volunteers.forEach(v => {
+          v.points = Number(v.points) || 0;
+          v.events = Number(v.events) || 0;
+          v.place = Number(v.place) || 0;
+        });
       } catch (error) {
         console.error('Ошибка загрузки данных:', error);
       }
@@ -40,7 +50,6 @@ createApp({
   },
   mounted() {
     this.fetchData();
-    // Автообновление каждые 5 минут
-    setInterval(this.fetchData, 300000);
+    setInterval(this.fetchData, 300000); // Обновление каждые 5 минут
   }
 }).mount('#app');
