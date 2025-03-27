@@ -1,7 +1,7 @@
 name: Update Volunteer Data
 on:
   schedule:
-    - cron: '0 * * * *'  # Запускать каждый час
+    - cron: '0 * * * *'  # Обновление каждый час
   workflow_dispatch:     # Разрешить ручной запуск
 
 jobs:
@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - name: Setup environment
         run: |
@@ -16,25 +18,33 @@ jobs:
           sudo apt-get install -y python3
           python3 -m pip install pandas
 
-      - name: Configure Git
-        run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "GitHub Actions"
-
       - name: Download and process data
         run: |
-          # Скачиваем данные с 3 попытками
+          # Скачиваем данные (3 попытки)
           for i in {1..3}; do
             curl -L -f "https://docs.google.com/spreadsheets/d/e/2PACX-1vT1ZqIl-YoI4bkefOkLBYPj3QcVEsXgnnhfW65ku2gvNj65ungX5tIpzbRo9DMTMaqSlvats--5e5V_/pub?gid=0&single=true&output=csv" -o data.csv && break || sleep 5
           done || { echo "::error::Не удалось скачать CSV"; exit 1; }
 
-          # Конвертируем CSV в JSON
+          # Конвертируем в JSON с правильными названиями колонок
           python3 -c "
           import pandas as pd
           import json
           
+          # Читаем CSV файл
           df = pd.read_csv('data.csv', encoding='utf-8-sig')
+          
+          # Удаляем полностью пустые строки
           df = df.dropna(how='all')
+          
+          # Переименовываем колонки для единообразия
+          df.columns = ['name', 'events', 'points', 'place']
+          
+          # Заменяем NaN на 0 в числовых колонках
+          df['events'] = df['events'].fillna(0).astype(int)
+          df['points'] = df['points'].fillna(0).astype(int)
+          df['place'] = df['place'].fillna(0).astype(int)
+          
+          # Сохраняем в JSON
           df.to_json('data.json', orient='records', force_ascii=False, indent=2)
           "
 
@@ -48,14 +58,17 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Добавляем файл и делаем коммит
-          git add data.json
-          git commit -m "Data update: $(date +'%Y-%m-%d %H:%M')" || exit 0
+          # Настраиваем Git
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          # Если есть изменения, пушим их
-          if [ -n "$(git status --porcelain)" ]; then
-            git pull --rebase
-            git push
-          else
+          # Коммитим изменения
+          git add data.json
+          if [ -z "$(git status --porcelain)" ]; then
             echo "Нет изменений для коммита"
+            exit 0
           fi
+          
+          git commit -m "Automatic data update: $(date +'%Y-%m-%d %H:%M')"
+          git pull --rebase
+          git push origin HEAD
