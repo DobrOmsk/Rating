@@ -39,8 +39,8 @@ createApp({
       }
     },
     async fetchData() {
-      // Загрузка данных из data.json (который обновляется через GitHub Actions)
-      const response = await fetch('data.json');
+      const response = await fetch('data.json?v=' + new 
+    Date().getTime());
       this.volunteers = await response.json();
     }
   },
