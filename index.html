@@ -3,21 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Рейтинг волонтеров</title>
+  <title>Рейтинг волонтёров | Добрые сердца</title>
+  <meta name="description" content="Рейтинг самых активных волонтёров нашей организации">
   <link rel="stylesheet" href="styles.css">
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <link rel="preload" href="logo.png" as="image">
+  <link rel="preload" href="bg-pattern.png" as="image">
 </head>
 <body>
+  <!-- Логотип -->
+  <a href="/">
+    <img src="logo.png" alt="Логотип Добрые сердца" class="logo">
+  </a>
+
   <div id="app">
-    <header>
-      <h1>🏆 Рейтинг волонтеров</h1>
-      <div class="controls">
-        <input v-model="searchQuery" placeholder="Поиск по имени" type="search">
-      </div>
+    <!-- Шапка с описанием -->
+    <header class="header">
+      <h1>🏆 Рейтинг волонтёров</h1>
+      <p>Мы ценим каждого, кто вносит свой вклад в добрые дела. Этот рейтинг отражает самых активных участников нашего движения. Спасибо вам за вашу работу!</p>
     </header>
 
+    <!-- Основное содержимое -->
     <main>
-      <table>
+      <div class="controls">
+        <input 
+          v-model="searchQuery" 
+          placeholder="Найти волонтёра по имени..." 
+          type="search"
+          aria-label="Поиск волонтёров"
+        >
+      </div>
+
+      <table aria-label="Рейтинг волонтёров">
         <thead>
           <tr>
             <th>Место</th>
@@ -31,7 +48,7 @@
             <td>{{ volunteer.place }}</td>
             <td>{{ volunteer.name }}</td>
             <td>{{ volunteer.events }}</td>
-            <td>{{ volunteer.points }}</td>
+            <td>{{ volunteer.points.toLocaleString() }}</td>
           </tr>
         </tbody>
       </table>
