@@ -5,8 +5,8 @@ createApp({
     return {
       volunteers: [],
       searchQuery: '',
-      sortField: 'points',
-      sortDirection: 'desc'
+      sortField: 'place',  // Сортировка по месту по умолчанию
+      sortDirection: 'asc' // По возрастанию (1, 2, 3...)
     }
   },
   computed: {
@@ -20,24 +20,15 @@ createApp({
         );
       }
       
+      // Автоматическая сортировка по месту
       return result.sort((a, b) => {
-        if (a[this.sortField] > b[this.sortField]) 
-          return this.sortDirection === 'asc' ? 1 : -1;
-        if (a[this.sortField] < b[this.sortField]) 
-          return this.sortDirection === 'asc' ? -1 : 1;
+        if (a.place > b.place) return 1;
+        if (a.place < b.place) return -1;
         return 0;
       });
     }
   },
   methods: {
-    sortBy(field) {
-      if (this.sortField === field) {
-        this.sortDirection = this.sortDirection === 'asc' ? 'desc' : 'asc';
-      } else {
-        this.sortField = field;
-        this.sortDirection = 'desc';
-      }
-    },
     async fetchData() {
       try {
         const response = await fetch('data.json?v=' + new Date().getTime());
