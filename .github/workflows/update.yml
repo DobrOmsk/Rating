@@ -45,7 +45,7 @@ jobs:
           })
           
           # Выбираем нужные колонки
-          df = df[['name', 'events', 'points', 'place']]
+          df = df[['place', 'name', 'events', 'points']]
           
           # Сохраняем в JSON
           df.to_json('data.json', orient='records', force_ascii=False, indent=2)
