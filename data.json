@@ -1,2456 +1,662 @@
 [
   {
-    "place":4.0,
+    "place":4,
     "name":"Ткачева Анастасия Павловна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":1.0,
+    "place":1,
     "name":"Волков Виктор Евгеньевич",
-    "events":"2",
+    "events":2,
     "points":"14,1"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Коржаков Матвей Александрович",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Бегжанов Никита Николаевич",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Даньшина Елена Игоревна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Авдащенко Дарья Олеговна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Болдырь Александра Викторовна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Орач Мария Михайловна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Игнатенко Дарья Максимовна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Москаленко Тимур Яшарович",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Лабузов Матвей",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Иванова Елена Михайловна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":1.0,
+    "place":1,
     "name":"Моисеева Анна Леонидовна",
-    "events":"2",
+    "events":2,
     "points":"14,1"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Галкина Татьяна Денисовна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Петров Михаил Александрович",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Меньшенина Алёна Витальевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Барахоев Микаил Магомедович",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Урмаева Светлана Сергеевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Лизунова Софья Вячеславовна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Архангельская Эльвира Кирилловна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Никулина Ксения Александровна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Саплин Кирилл Витальевич",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Шишкина Анастасия Евгеньевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Титушин Кирилл Евгеньевич",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":1.0,
+    "place":1,
     "name":"Чулкова Анастасия Павловна",
-    "events":"2",
+    "events":2,
     "points":"14,1"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Долганова Ольга Александровна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Трошина Владислава Владимировна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Аникеева Мария Алексеевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Пашигорова Алиса Алексеевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Киселёва Мария Сергеевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Ситникова Наталья Петровна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Петрова Полина Олеговна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Нурпеисов Дамир Булатович",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Леус Елена Борисовна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Пичерских Любовь Ивановна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Перевальская Алена Викторовна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Коваленко Ева Радомировна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Сафронова Таисия Алексеевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Верухина Татьяна Алексеевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Разгонов Владимир Викторович",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Силивестрова Оксана Николаевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Ткач Софья Алексеевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Струц Анастасия",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Карсакова Ксения Сергеевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Титаренко Елена Сергеевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Афонькова Юлия Владимировна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Разуева Ксения Дмитриевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Иванова Анастасия Игоревна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Тастембекова Алмагуль Саматовна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Саламатова Елизавета Дмитриевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Идрисова Валентина Георгиевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Артюхина Ольга Валериевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Кузнецов Егор Сергеевич",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Ользарович Евгения Алексеевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Низовцева Александра Александровна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Непомнящих Василина Евгеньевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Сергеева Алиса Романовна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Фёдорова Екатерина Евгеньевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Лещенко Василиса Михайловна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Абраменко Ангелина Григорьевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Кизюн Софья Вячеславовна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Стерликова Диана Дмитриевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Дрозд Анастасия Сергеевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Плеханова Александра Павловна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Перевальская Мария Дмитриевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Веселова Дарья Дмитриевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Немова Екатерина Денисовна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Волкова Маргарита",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Тимошенко Виктория Олеговна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Конышев Максим Константинович",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Ребрий Виктория Денисовна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Медведев Алексей Юрьевич",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Хорошавина Александра Андреевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Коваленко Ульяна Александровна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Бабикова София",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Коркин Макар",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Кучерова Софья Ивановна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Пиндюк Лев",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Халилов Рафаэль Анарович",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Кошукова Оляна Андреевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Дементьева Полина Юрьевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Притыко Дарья Денисовна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Игнатенко Екатерина Викторовна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Струк Мария Сергеевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Долганов Николай Александрович",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Карпова Мария Александровна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Исаева Ольга Александровна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Ляхов Александр Александрович",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Соколенко Виктория Викторовна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Какаев Денис Васильевич",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Чучалина Валерия Павловна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Колтыго Татьяна Анатольевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Тихий-Тищенко Анжелика Алексеевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Бабушкин Илья Денисович",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Марус Ева Максимовна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Шишкина Людмила Владимировна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Удовенко Дмитрий Владимирович",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Удовенко Мария Владимировна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Паращук Сергей Алексеевич",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Парунов Иван Викторович",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Шиндяпина Арина Денисовна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Денюшина Виктория Алексеевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Морозов Никита Евгеньевич",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Глушкова Варвара Евгеньевна",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Орлов Дмитрий Константинович",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Яковлева Ксения",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Скуратова Виктория",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Москавчук Станислав Владимирович",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Гречко Вадим",
-    "events":"1",
+    "events":1,
     "points":"10"
   },
   {
-    "place":4.0,
+    "place":4,
     "name":"Липов Андрей",
-    "events":"1",
+    "events":1,
     "points":"10"
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":null,
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"#REF!",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"2",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"2",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"2",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
-  },
-  {
-    "place":null,
-    "name":null,
-    "events":"1",
-    "points":null
   }
 ]
