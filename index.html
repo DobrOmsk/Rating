@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Рейтинг волонтеров</title>
   <link rel="stylesheet" href="styles.css">
-  <!-- Исправленная ссылка на Vue 3 -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
@@ -14,8 +13,6 @@
       <h1>🏆 Рейтинг волонтеров</h1>
       <div class="controls">
         <input v-model="searchQuery" placeholder="Поиск по имени" type="search">
-        <button @click="sortBy('name')">По имени</button>
-        <button @click="sortBy('points')">По баллам</button>
       </div>
     </header>
 
@@ -23,28 +20,22 @@
       <table>
         <thead>
           <tr>
-            <th>#</th>
-            <th>ФИО</th>
-            <th>Мероприятия</th>
-            <th>Баллы</th>
             <th>Место</th>
+            <th>ФИО</th>
+            <th>Добрые дела</th>
+            <th>Баллы</th>
           </tr>
         </thead>
         <tbody>
-          <tr v-for="(volunteer, index) in filteredVolunteers" :key="index">
-            <td>{{ index + 1 }}</td>
+          <tr v-for="volunteer in filteredVolunteers" :key="volunteer.name">
+            <td>{{ volunteer.place }}</td>
             <td>{{ volunteer.name }}</td>
             <td>{{ volunteer.events }}</td>
             <td>{{ volunteer.points }}</td>
-            <td>{{ volunteer.place }}</td>
           </tr>
         </tbody>
       </table>
     </main>
-
-    <footer>
-      Обновлено: {{ new Date().toLocaleString() }}
-    </footer>
   </div>
 
   <script src="script.js"></script>
