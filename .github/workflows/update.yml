@@ -28,13 +28,10 @@ jobs:
         run: |
           python -c "
           import pandas as pd
-          # Читаем CSV и выбираем нужные колонки
-          df = pd.read_csv('data.csv')[['Место', 'ФИО', 'Добрые дела', 'Баллы']]
-          # Переименовываем колонки
+          df = pd.read_csv('data.csv')
+          df = df[['Место', 'ФИО', 'Добрые дела', 'Баллы']]
           df.columns = ['place', 'name', 'events', 'points']
-          # Сортируем по месту (по возрастанию)
           df = df.sort_values('place')
-          # Конвертируем в JSON
           df.to_json('data.json', orient='records', indent=2, force_ascii=False)
           print('Данные успешно обработаны')
           "
