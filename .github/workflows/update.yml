@@ -1,7 +1,7 @@
 name: Update Volunteer Data
 on:
   schedule:
-    - cron: '0 * * * *'  # Каждый час
+    - cron: '0 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -22,18 +22,38 @@ jobs:
         run: |
           curl -L "https://docs.google.com/spreadsheets/d/e/2PACX-1vT1ZqIl-YoI4bkefOkLBYPj3QcVEsXgnnhfW65ku2gvNj65ungX5tIpzbRo9DMTMaqSlvats--5e5V_/pub?gid=0&single=true&output=csv" -o data.csv
           echo "=== Первые строки CSV ==="
-          head -n 3 data.csv
+          head -n 5 data.csv
+          echo "=== Все заголовки ==="
+          head -n 1 data.csv | tr ',' '\n'
 
       - name: Convert to JSON
         run: |
           python <<EOF
           import pandas as pd
-          df = pd.read_csv('data.csv')
-          df = df[['Место', 'ФИО', 'Добрые дела', 'Баллы']]
-          df.columns = ['place', 'name', 'events', 'points']
-          df = df.sort_values('place')
-          df.to_json('data.json', orient='records', indent=2, force_ascii=False)
-          print("Данные успешно преобразованы в JSON")
+          try:
+              # Читаем CSV с правильной кодировкой
+              df = pd.read_csv('data.csv', encoding='utf-8-sig')
+              
+              # Проверяем наличие всех нужных колонок
+              required_columns = ['Место', 'ФИО', 'Добрые дела', 'Баллы']
+              missing = [col for col in required_columns if col not in df.columns]
+              if missing:
+                  raise ValueError(f"Отсутствуют колонки: {missing}")
+              
+              # Выбираем и переименовываем колонки
+              df = df[required_columns]
+              df.columns = ['place', 'name', 'events', 'points']
+              
+              # Удаляем пустые строки и сортируем
+              df = df.dropna()
+              df = df.sort_values('place')
+              
+              # Сохраняем в JSON
+              df.to_json('data.json', orient='records', indent=2, force_ascii=False)
+              print(f"Успешно обработано {len(df)} записей")
+          except Exception as e:
+              print(f"Ошибка обработки: {str(e)}")
+              exit(1)
           EOF
 
       - name: Commit and push
