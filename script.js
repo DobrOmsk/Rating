@@ -13,6 +13,7 @@ createApp({
     filteredVolunteers() {
       let result = this.volunteers;
       
+      // Фильтрация
       if (this.searchQuery) {
         const query = this.searchQuery.toLowerCase();
         result = result.filter(v => 
@@ -20,36 +21,34 @@ createApp({
         );
       }
       
-      return result.sort((a, b) => {
-        if (a[this.sortField] > b[this.sortField]) {
-          return this.sortDirection === 'asc' ? 1 : -1;
-        }
-        if (a[this.sortField] < b[this.sortField]) {
-          return this.sortDirection === 'asc' ? -1 : 1;
-        }
-        return 0;
-      });
+      // Сортировка
+      return result.sort((a, b) => a.place - b.place);
     }
   },
   methods: {
     async fetchData() {
       try {
         const response = await fetch('data.json?v=' + new Date().getTime());
-        this.volunteers = await response.json();
+        if (!response.ok) throw new Error('Ошибка загрузки');
+        const data = await response.json();
         
-        // Форматирование чисел
-        this.volunteers.forEach(v => {
-          v.points = Number(v.points) || 0;
-          v.events = Number(v.events) || 0;
-          v.place = Number(v.place) || 0;
-        });
+        // Преобразование типов данных
+        this.volunteers = data.map(item => ({
+          name: String(item.name),
+          events: Number(item.events) || 0,
+          points: Number(item.points) || 0,
+          place: Number(item.place) || 0
+        }));
+        
       } catch (error) {
-        console.error('Ошибка загрузки данных:', error);
+        console.error('Ошибка:', error);
+        // Можно добавить уведомление для пользователя
       }
     }
   },
   mounted() {
     this.fetchData();
-    setInterval(this.fetchData, 300000); // Обновление каждые 5 минут
+    // Обновление каждые 5 минут
+    setInterval(this.fetchData, 300000);
   }
 }).mount('#app');
