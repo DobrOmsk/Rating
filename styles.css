@@ -1,212 +1,130 @@
+/* Сброс стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Основные стили */
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  margin: 0;
-  padding: 0;
+  background: #f9f4ff;
   color: #333;
-  background: 
-    linear-gradient(rgba(230, 230, 250, 0.9), rgba(230, 230, 250, 0.9)),
-    url('bg-pattern.png') repeat;
-  min-height: 100vh;
+  padding: 20px;
 }
 
 /* Логотип */
-.logo {
+.logo-link {
   position: absolute;
   top: 20px;
   left: 20px;
-  width: 100px;
-  height: auto;
+  width: 60px; /* Уменьшенный размер */
+  height: 60px;
   z-index: 100;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
-  transition: transform 0.3s ease;
 }
 
-.logo:hover {
-  transform: scale(1.05);
+.logo {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #e6d6ff;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
 /* Шапка */
 .header {
-  background: linear-gradient(135deg, #9370DB 0%, #8A2BE2 100%);
+  background: linear-gradient(135deg, #8e44ad, #9b59b6);
   color: white;
-  padding: 2.5rem;
-  margin: 2rem auto;
-  border-radius: 25px;
-  box-shadow: 0 10px 30px rgba(147, 112, 219, 0.3);
+  padding: 1.5rem;
+  margin: 50px auto 2rem;
+  border-radius: 15px;
   max-width: 900px;
-  position: relative;
-  overflow: hidden;
-  backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.header::before {
-  content: "";
-  position: absolute;
-  top: -50px;
-  right: -50px;
-  width: 150px;
-  height: 150px;
-  background-color: #FFA500;
-  border-radius: 50%;
-  opacity: 0.15;
-  z-index: -1;
-}
-
-.header::after {
-  content: "";
-  position: absolute;
-  bottom: -30px;
-  left: -30px;
-  width: 100px;
-  height: 100px;
-  background-color: #FFA500;
-  border-radius: 50%;
-  opacity: 0.1;
-  z-index: -1;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  position: relative;
-}
-
-.header p {
-  margin: 1rem 0 0;
-  font-size: 1.1rem;
-  max-width: 80%;
-  position: relative;
-}
-
-/* Основной контент */
-#app {
-  max-width: 900px;
-  margin: 0 auto 3rem;
-  padding: 0 20px;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Таблица */
 table {
   width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
   border-collapse: separate;
   border-spacing: 0;
   background: white;
-  border-radius: 25px;
+  border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 15px 35px rgba(147, 112, 219, 0.2);
-  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 th, td {
-  padding: 18px 25px;
+  padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid #F0E6FF;
+  border-bottom: 1px solid #f0e6ff;
 }
 
 th {
-  background: linear-gradient(135deg, #9370DB 0%, #8A2BE2 100%);
+  background: #9b59b6;
   color: white;
   font-weight: 500;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  letter-spacing: 0.5px;
-}
-
-td {
-  transition: all 0.2s ease;
 }
 
 tr:last-child td {
   border-bottom: none;
 }
 
-tr:hover td {
-  background-color: #F9F5FF;
+tr:hover {
+  background-color: #faf5ff;
 }
 
-tr:hover td:first-child {
-  border-left: 4px solid #FFA500;
-  padding-left: 21px;
+.loading {
+  text-align: center;
+  color: #777;
+  padding: 20px;
 }
 
-/* Элементы управления */
+/* Поиск */
 .controls {
-  margin: 2.5rem 0;
-  display: flex;
-  justify-content: center;
+  margin: 1.5rem auto;
+  max-width: 900px;
 }
 
 input {
-  padding: 15px 25px;
-  border-radius: 50px;
-  border: 2px solid #9370DB;
-  width: 350px;
+  width: 100%;
+  padding: 12px 20px;
+  border: 2px solid #ddd;
+  border-radius: 30px;
   font-size: 1rem;
   outline: none;
   transition: all 0.3s;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 5px 15px rgba(147, 112, 219, 0.1);
 }
 
 input:focus {
-  border-color: #FFA500;
-  box-shadow: 0 0 0 4px rgba(255, 165, 0, 0.15);
-  transform: translateY(-2px);
+  border-color: #9b59b6;
+  box-shadow: 0 0 0 3px rgba(155, 89, 182, 0.2);
 }
 
 /* Адаптивность */
 @media (max-width: 768px) {
   .header {
-    padding: 1.8rem;
-    margin: 1rem;
-    text-align: center;
-  }
-  
-  .header h1 {
-    font-size: 2rem;
-  }
-  
-  .header p {
-    max-width: 100%;
-    font-size: 1rem;
+    margin: 40px 0 1.5rem;
+    padding: 1.2rem;
   }
   
   th, td {
-    padding: 12px 15px;
+    padding: 10px 12px;
+    font-size: 0.9rem;
   }
   
-  input {
-    width: 90%;
-    padding: 12px 20px;
-  }
-  
-  .logo {
-    width: 80px;
+  .logo-link {
+    width: 50px;
+    height: 50px;
     top: 15px;
     left: 15px;
   }
-}
-
-/* Анимации */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
-  100% { transform: translateY(0); }
-}
-
-table {
-  animation: fadeIn 0.8s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.header h1 {
-  animation: float 4s ease-in-out infinite;
 }
