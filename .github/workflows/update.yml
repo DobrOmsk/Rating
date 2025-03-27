@@ -1,52 +1,51 @@
 name: Update Volunteer Data
 on:
   schedule:
-    - cron: '0 * * * *'  # Обновление каждый час
-  workflow_dispatch:     # Разрешить ручной запуск
+    - cron: '0 * * * *'  # Каждый час
+  workflow_dispatch:
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT }}  # Используем ваш PAT
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
-      - name: Install dependencies
-        run: |
-          python -m pip install pandas
+      - name: Install pandas
+        run: pip install pandas
 
-      - name: Download data
+      - name: Download Google Sheet data
         run: |
-          # Простое скачивание без сложных проверок
-          curl -L "https://docs.google.com/spreadsheets/d/e/2PACX-1vT1ZqIl-YoI4bkefOkLBYPj3QcVEsXgnnhfW65ku2gvNj65ungX5tIpzbRo9DMTMaqSlvats--5e5V_/pub?gid=0&single=true&output=csv" -o data.csv
+          curl -L -f "https://docs.google.com/spreadsheets/d/e/2PACX-1vT1ZqIl-YoI4bkefOkLBYPj3QcVEsXgnnhfW65ku2gvNj65ungX5tIpzbRo9DMTMaqSlvats--5e5V_/pub?gid=0&single=true&output=csv" -o data.csv
+          echo "Размер скачанного файла: $(wc -c data.csv)"
 
       - name: Convert to JSON
         run: |
           python -c "
           import pandas as pd
           try:
-              df = pd.read_csv('data.csv')
-              df = df[['ФИО', 'Мероприятия', 'Баллы', 'Место']]
+              df = pd.read_csv('data.csv', usecols=['ФИО', 'Мероприятия', 'Баллы', 'Место'])
               df.columns = ['name', 'events', 'points', 'place']
-              df.to_json('data.json', orient='records', indent=2)
-              print('Конвертация успешна')
+              df.to_json('data.json', orient='records', indent=2, force_ascii=False)
+              print(f'Успешно обработано {len(df)} записей')
           except Exception as e:
-              print(f'Ошибка: {e}')
+              print(f'Ошибка: {str(e)}')
               exit(1)
           "
 
-      - name: Commit and Push
+      - name: Push changes
         run: |
-          git config --global user.name "GitHub Actions Bot"
-          git config --global user.email "actions@users.noreply.github.com"
-          
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
           git add data.json
-          git commit -m "Обновление данных $(date +'%Y-%m-%d %H:%M')" || echo "Нет изменений"
-          
-          # Простой push без rebase
-          git pull
-          git push
+          git commit -m "Автообновление данных $(date +'%d.%m.%Y %H:%M')" || exit 0
+          git pull --rebase
+          git push origin HEAD:main
