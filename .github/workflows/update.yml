@@ -23,37 +23,18 @@ jobs:
           curl -L "https://docs.google.com/spreadsheets/d/e/2PACX-1vT1ZqIl-YoI4bkefOkLBYPj3QcVEsXgnnhfW65ku2gvNj65ungX5tIpzbRo9DMTMaqSlvats--5e5V_/pub?gid=0&single=true&output=csv" -o data.csv
           echo "=== Проверка данных ==="
           head -n 5 data.csv
-          echo "=== Кодировка файла ==="
-          file -i data.csv
 
-      - name: Process data
+      - name: Convert to JSON
         run: |
-          python <<EOF
-          import pandas as pd
-          import codecs
-          
-          # Чтение CSV с явным указанием кодировки
-          with codecs.open('data.csv', 'r', encoding='utf-8-sig') as f:
-              df = pd.read_csv(f)
-          
-          # Проверка колонок
-          required_columns = ['Место', 'ФИО', 'Добрые дела', 'Баллы']
-          if not all(col in df.columns for col in required_columns):
-              print("Ошибка: Не найдены все необходимые колонки")
-              print("Найдены:", df.columns.tolist())
-              exit(1)
-          
-          # Обработка данных
-          df = df[required_columns]
-          df.columns = ['place', 'name', 'events', 'points']
-          df = df.dropna()
-          df['place'] = df['place'].astype(int)
-          df = df.sort_values('place')
-          
-          # Сохранение
-          df.to_json('data.json', orient='records', force_ascii=False, indent=2)
-          print(f"Успешно обработано {len(df)} записей")
-          EOF
+          python -c "
+          import pandas as pd;
+          df = pd.read_csv('data.csv');
+          df = df[['Место', 'ФИО', 'Добрые дела', 'Баллы']];
+          df.columns = ['place', 'name', 'events', 'points'];
+          df = df.sort_values('place');
+          df.to_json('data.json', orient='records', indent=2, force_ascii=False);
+          print('Данные успешно обработаны');
+          "
 
       - name: Commit and push
         env:
