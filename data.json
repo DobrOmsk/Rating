@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "name":"впавп",
+    "events":23,
+    "points":1752,
+    "place":3
+  },
+  {
+    "name":"ваправ",
+    "events":255,
+    "points":5218,
+    "place":4
+  },
+  {
+    "name":"рвптва",
+    "events":25,
+    "points":25592,
+    "place":2
+  },
+  {
+    "name":"впркрк",
+    "events":52,
+    "points":5855,
+    "place":1
+  }
+]
