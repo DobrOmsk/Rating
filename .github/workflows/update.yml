@@ -16,63 +16,48 @@ jobs:
           python-version: '3.10'
 
       - name: Install dependencies
-        run: |
-          pip install pandas
-          pip install PyGithub
+        run: pip install pandas
 
       - name: Download data
         run: |
           curl -L -f "https://docs.google.com/spreadsheets/d/e/2PACX-1vT1ZqIl-YoI4bkefOkLBYPj3QcVEsXgnnhfW65ku2gvNj65ungX5tIpzbRo9DMTMaqSlvats--5e5V_/pub?gid=0&single=true&output=csv" -o data.csv
+          echo "Проверка первых строк CSV:"
+          head -n 3 data.csv
 
-      - name: Process data
+      - name: Convert to JSON
         run: |
           python -c "
           import pandas as pd
-          df = pd.read_csv('data.csv')[['ФИО','Мероприятия','Баллы','Место']]
-          df.columns = ['name','events','points','place']
-          df.to_json('data.json', orient='records', indent=2, force_ascii=False)
+          import json
+          
+          # Читаем CSV файл
+          df = pd.read_csv('data.csv', encoding='utf-8-sig')
+          
+          # Выводим список колонок для отладки
+          print('Доступные колонки:', df.columns.tolist())
+          
+          # Переименовываем колонки (если нужно)
+          df = df.rename(columns={
+            'ФИО': 'name',
+            'Добрые дела': 'events',
+            'Баллы': 'points',
+            'Место': 'place'
+          })
+          
+          # Выбираем нужные колонки
+          df = df[['name', 'events', 'points', 'place']]
+          
+          # Сохраняем в JSON
+          df.to_json('data.json', orient='records', force_ascii=False, indent=2)
+          print('Данные успешно преобразованы в JSON')
           "
 
-      - name: Update file via API
+      - name: Commit and push
         env:
-          PAT: ${{ secrets.PAT }}  # Убедитесь, что создали этот секрет!
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python -c "
-          from github import Github
-          import os
-          
-          # Получаем токен из переменных окружения
-          token = os.environ['PAT']
-          if not token:
-              print('Error: PAT token is empty!')
-              exit(1)
-              
-          g = Github(token)
-          repo = g.get_repo('DobrOmsk/Rating')
-          
-          with open('data.json', 'r') as f:
-              content = f.read()
-          
-          try:
-              # Пытаемся обновить существующий файл
-              contents = repo.get_contents('data.json')
-              repo.update_file(
-                  path='data.json',
-                  message='Automatic data update',
-                  content=content,
-                  sha=contents.sha
-              )
-              print('File successfully updated via API')
-          except Exception as e:
-              # Если файла нет, создаем новый
-              if '404' in str(e):
-                  repo.create_file(
-                      path='data.json',
-                      message='Create data file',
-                      content=content
-                  )
-                  print('File successfully created via API')
-              else:
-                  print(f'Error: {str(e)}')
-                  exit(1)
-          "
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git add data.json
+          git commit -m "Autoupdate $(date +'%Y-%m-%d %H:%M')" || exit 0
+          git push
