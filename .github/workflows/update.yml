@@ -8,11 +8,7 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.PAT }}
-          persist-credentials: true
+      - uses: actions/checkout@v4
 
       - name: Setup Python
         uses: actions/setup-python@v4
@@ -20,7 +16,9 @@ jobs:
           python-version: '3.10'
 
       - name: Install dependencies
-        run: pip install pandas
+        run: |
+          pip install pandas
+          pip install PyGithub
 
       - name: Download data
         run: |
@@ -35,15 +33,33 @@ jobs:
           df.to_json('data.json', orient='records', indent=2, force_ascii=False)
           "
 
-      - name: Configure Git
+      - name: Update file via API
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT }}
         run: |
-          git config --global user.email "actions@github.com"
-          git config --global user.name "GitHub Actions"
-          git remote set-url origin https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}
-
-      - name: Commit and push
-        run: |
-          git add data.json
-          git commit -m "Autoupdate $(date +'%Y-%m-%d %H:%M')" || exit 0
-          git pull --rebase
-          git push origin HEAD:main
+          python -c "
+          from github import Github
+          import json
+          
+          # Авторизация
+          g = Github('${{ secrets.PAT }}')
+          repo = g.get_repo('DobrOmsk/Rating')
+          
+          # Чтение файла
+          with open('data.json', 'r') as f:
+              content = f.read()
+          
+          # Обновление файла через API
+          try:
+              contents = repo.get_contents('data.json')
+              repo.update_file(
+                  path='data.json',
+                  message='Automatic data update',
+                  content=content,
+                  sha=contents.sha
+              )
+              print('File successfully updated via API')
+          except Exception as e:
+              print(f'Error updating file: {str(e)}')
+              exit(1)
+          "
