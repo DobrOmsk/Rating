@@ -20,21 +20,21 @@ jobs:
 
       - name: Download data
         run: |
-          curl -L "https://docs.google.com/spreadsheets/d/e/2PACX-1vT1ZqIl-YoI4bkefOkLBYPj3QcVEsXgnnhfW65ku2gvNj65ungX5tIpzbRo9DMTMaqSlvats--5e5V_/pub?gid=0&single=true&output=csv" -o data.csv
-          echo "=== Проверка данных ==="
-          head -n 5 data.csv
+          curl -L -f "https://docs.google.com/spreadsheets/d/e/2PACX-1vT1ZqIl-YoI4bkefOkLBYPj3QcVEsXgnnhfW65ku2gvNj65ungX5tIpzbRo9DMTMaqSlvats--5e5V_/pub?gid=0&single=true&output=csv" -o data.csv
+          echo "=== Первые строки CSV ==="
+          head -n 3 data.csv
 
       - name: Convert to JSON
         run: |
           python -c "
-          import pandas as pd;
-          df = pd.read_csv('data.csv');
-          df = df[['Место', 'ФИО', 'Добрые дела', 'Баллы']];
-          df.columns = ['place', 'name', 'events', 'points'];
-          df = df.sort_values('place');
-          df.to_json('data.json', orient='records', indent=2, force_ascii=False);
-          print('Данные успешно обработаны');
-          "
+import pandas as pd
+df = pd.read_csv('data.csv')
+df = df[['Место', 'ФИО', 'Добрые дела', 'Баллы']]
+df.columns = ['place', 'name', 'events', 'points']
+df = df.sort_values('place')
+df.to_json('data.json', orient='records', indent=2, force_ascii=False)
+print('Успешно обработано записей:', len(df))
+"
 
       - name: Commit and push
         env:
