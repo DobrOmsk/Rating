@@ -1,7 +1,7 @@
 name: Update Volunteer Data
 on:
   schedule:
-    - cron: '0 * * * *'  # Каждый час
+    - cron: '0 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -21,10 +21,10 @@ jobs:
       - name: Download data
         run: |
           curl -L -f "https://docs.google.com/spreadsheets/d/e/2PACX-1vT1ZqIl-YoI4bkefOkLBYPj3QcVEsXgnnhfW65ku2gvNj65ungX5tIpzbRo9DMTMaqSlvats--5e5V_/pub?gid=0&single=true&output=csv" -o data.csv
-          echo "Проверка первых строк CSV:"
+          echo "=== Первые 3 строки CSV ==="
           head -n 3 data.csv
 
-      - name: Convert to JSON
+      - name: Process data
         run: |
           python -c "
           import pandas as pd
@@ -33,23 +33,38 @@ jobs:
           # Читаем CSV файл
           df = pd.read_csv('data.csv', encoding='utf-8-sig')
           
-          # Выводим список колонок для отладки
-          print('Доступные колонки:', df.columns.tolist())
+          # Выводим все доступные колонки
+          print('Обнаруженные колонки:', list(df.columns))
           
-          # Переименовываем колонки (если нужно)
-          df = df.rename(columns={
-            'Место': 'place'
-            'ФИО': 'name',
-            'Добрые дела': 'events',
-            'Баллы': 'points'
-          })
+          # Автоматически определяем колонки по содержимому
+          result = []
+          for _, row in df.iterrows():
+              entry = {}
+              # Ищем ФИО (первая текстовая колонка)
+              for col in df.columns:
+                  if pd.api.types.is_string_dtype(row[col]) and not entry.get('name'):
+                      entry['name'] = row[col]
+                  # Ищем баллы (первая числовая колонка)
+                  elif pd.api.types.is_numeric_dtype(row[col]) and not entry.get('points'):
+                      entry['points'] = int(row[col])
+                  # Ищем место (вторая числовая колонка)
+                  elif pd.api.types.is_numeric_dtype(row[col]) and 'points' in entry and not entry.get('place'):
+                      entry['place'] = int(row[col])
+                  # Ищем мероприятия (третья числовая колонка)
+                  elif pd.api.types.is_numeric_dtype(row[col]) and 'points' in entry and 'place' in entry and not entry.get('events'):
+                      entry['events'] = int(row[col])
+              
+              if len(entry) == 4:  # Проверяем что все поля найдены
+                  result.append(entry)
           
-          # Выбираем нужные колонки
-          df = df[['place', 'name', 'events', 'points']]
+          # Сортируем по месту
+          result.sort(key=lambda x: x['place'])
           
           # Сохраняем в JSON
-          df.to_json('data.json', orient='records', force_ascii=False, indent=2)
-          print('Данные успешно преобразованы в JSON')
+          with open('data.json', 'w', encoding='utf-8') as f:
+              json.dump(result, f, ensure_ascii=False, indent=2)
+          
+          print('Успешно обработано записей:', len(result))
           "
 
       - name: Commit and push
