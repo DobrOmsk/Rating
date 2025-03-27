@@ -1,662 +1,1982 @@
 [
   {
-    "place":"1",
+    "place":null,
     "name":"Ткачева Анастасия Павловна",
-    "events":"5555",
-    "points":"1752"
+    "events":"2",
+    "points":null
   },
   {
-    "place":"5",
+    "place":null,
     "name":"Волков Виктор Евгеньевич",
-    "events":"255",
-    "points":"5218"
+    "events":"23",
+    "points":null
   },
   {
-    "place":"2",
+    "place":null,
     "name":"Коржаков Матвей Александрович",
-    "events":"25",
-    "points":"25592"
+    "events":"56",
+    "points":null
   },
   {
-    "place":"3",
+    "place":2.0,
     "name":"Бегжанов Никита Николаевич",
-    "events":"52",
-    "points":"5855"
+    "events":"565",
+    "points":256.0
   },
   {
-    "place":"4",
+    "place":1.0,
     "name":"Даньшина Елена Игоревна",
-    "events":"46",
-    "points":"4687678"
+    "events":null,
+    "points":1678.0
   },
   {
-    "place":"6",
+    "place":null,
     "name":"Авдащенко Дарья Олеговна",
-    "events":"47",
-    "points":"68467"
+    "events":null,
+    "points":null
   },
   {
-    "place":"5,8",
+    "place":null,
     "name":"Болдырь Александра Викторовна",
-    "events":"-1817,333333",
-    "points":"2235215,467"
+    "events":null,
+    "points":null
   },
   {
-    "place":"6,457142857",
+    "place":null,
     "name":"Орач Мария Михайловна",
-    "events":"-2621,333333",
-    "points":"2645535,981"
+    "events":null,
+    "points":null
   },
   {
-    "place":"7,114285714",
+    "place":null,
     "name":"Игнатенко Дарья Максимовна",
-    "events":"-3425,333333",
-    "points":"3055856,495"
+    "events":null,
+    "points":null
   },
   {
-    "place":"7,771428571",
+    "place":null,
     "name":"Москаленко Тимур Яшарович",
-    "events":"-4229,333333",
-    "points":"3466177,01"
+    "events":null,
+    "points":null
   },
   {
-    "place":"8,428571429",
+    "place":null,
     "name":"Лабузов Матвей",
-    "events":"-5033,333333",
-    "points":"3876497,524"
+    "events":null,
+    "points":null
   },
   {
-    "place":"9,085714286",
+    "place":null,
     "name":"Иванова Елена Михайловна",
-    "events":"-5837,333333",
-    "points":"4286818,038"
+    "events":null,
+    "points":null
   },
   {
-    "place":"9,742857143",
+    "place":null,
     "name":"Моисеева Анна Леонидовна",
-    "events":"-6641,333333",
-    "points":"4697138,552"
+    "events":null,
+    "points":null
   },
   {
-    "place":"10,4",
+    "place":null,
     "name":"Галкина Татьяна Денисовна",
-    "events":"-7445,333333",
-    "points":"5107459,067"
+    "events":null,
+    "points":null
   },
   {
-    "place":"11,05714286",
+    "place":null,
     "name":"Петров Михаил Александрович",
-    "events":"-8249,333333",
-    "points":"5517779,581"
+    "events":null,
+    "points":null
   },
   {
-    "place":"11,71428571",
+    "place":null,
     "name":"Меньшенина Алёна Витальевна",
-    "events":"-9053,333333",
-    "points":"5928100,095"
+    "events":null,
+    "points":null
   },
   {
-    "place":"12,37142857",
+    "place":null,
     "name":"Барахоев Микаил Магомедович",
-    "events":"-9857,333333",
-    "points":"6338420,61"
+    "events":null,
+    "points":null
   },
   {
-    "place":"13,02857143",
+    "place":null,
     "name":"Урмаева Светлана Сергеевна",
-    "events":"-10661,33333",
-    "points":"6748741,124"
+    "events":null,
+    "points":null
   },
   {
-    "place":"13,68571429",
+    "place":null,
     "name":"Лизунова Софья Вячеславовна",
-    "events":"-11465,33333",
-    "points":"7159061,638"
+    "events":null,
+    "points":null
   },
   {
-    "place":"14,34285714",
+    "place":null,
     "name":"Архангельская Эльвира Кирилловна",
-    "events":"-12269,33333",
-    "points":"7569382,152"
+    "events":null,
+    "points":null
   },
   {
-    "place":"15",
+    "place":null,
     "name":"Никулина Ксения Александровна",
-    "events":"-13073,33333",
-    "points":"7979702,667"
+    "events":null,
+    "points":null
   },
   {
-    "place":"15,65714286",
+    "place":null,
     "name":"Саплин Кирилл Витальевич",
-    "events":"-13877,33333",
-    "points":"8390023,181"
+    "events":null,
+    "points":null
   },
   {
-    "place":"16,31428571",
+    "place":null,
     "name":"Шишкина Анастасия Евгеньевна",
-    "events":"-14681,33333",
-    "points":"8800343,695"
+    "events":null,
+    "points":null
   },
   {
-    "place":"16,97142857",
+    "place":null,
     "name":"Титушин Кирилл Евгеньевич",
-    "events":"-15485,33333",
-    "points":"9210664,21"
+    "events":null,
+    "points":null
   },
   {
-    "place":"17,62857143",
+    "place":null,
     "name":"Чулкова Анастасия Павловна",
-    "events":"-16289,33333",
-    "points":"9620984,724"
+    "events":null,
+    "points":null
   },
   {
-    "place":"18,28571429",
+    "place":null,
     "name":"Долганова Ольга Александровна",
-    "events":"-17093,33333",
-    "points":"10031305,24"
+    "events":null,
+    "points":null
   },
   {
-    "place":"18,94285714",
+    "place":null,
     "name":"Трошина Владислава Владимировна",
-    "events":"-17897,33333",
-    "points":"10441625,75"
+    "events":null,
+    "points":null
   },
   {
-    "place":"19,6",
+    "place":null,
     "name":"Аникеева Мария Алексеевна",
-    "events":"-18701,33333",
-    "points":"10851946,27"
+    "events":null,
+    "points":null
   },
   {
-    "place":"20,25714286",
+    "place":null,
     "name":"Пашигорова Алиса Алексеевна",
-    "events":"-19505,33333",
-    "points":"11262266,78"
+    "events":null,
+    "points":null
   },
   {
-    "place":"20,91428571",
+    "place":null,
     "name":"Киселёва Мария Сергеевна",
-    "events":"-20309,33333",
-    "points":"11672587,3"
+    "events":null,
+    "points":null
   },
   {
-    "place":"21,57142857",
+    "place":null,
     "name":"Ситникова Наталья Петровна",
-    "events":"-21113,33333",
-    "points":"12082907,81"
+    "events":null,
+    "points":null
   },
   {
-    "place":"22,22857143",
+    "place":null,
     "name":"Петрова Полина Олеговна",
-    "events":"-21917,33333",
-    "points":"12493228,32"
+    "events":null,
+    "points":null
   },
   {
-    "place":"22,88571429",
+    "place":null,
     "name":"Нурпеисов Дамир Булатович",
-    "events":"-22721,33333",
-    "points":"12903548,84"
+    "events":null,
+    "points":null
   },
   {
-    "place":"23,54285714",
+    "place":null,
     "name":"Леус Елена Борисовна",
-    "events":"-23525,33333",
-    "points":"13313869,35"
+    "events":null,
+    "points":null
   },
   {
-    "place":"24,2",
+    "place":null,
     "name":"Пичерских Любовь Ивановна",
-    "events":"-24329,33333",
-    "points":"13724189,87"
+    "events":null,
+    "points":null
   },
   {
-    "place":"24,85714286",
+    "place":null,
     "name":"Перевальская Алена Викторовна",
-    "events":"-25133,33333",
-    "points":"14134510,38"
+    "events":null,
+    "points":null
   },
   {
-    "place":"25,51428571",
+    "place":null,
     "name":"Коваленко Ева Радомировна",
-    "events":"-25937,33333",
-    "points":"14544830,9"
+    "events":null,
+    "points":null
   },
   {
-    "place":"26,17142857",
+    "place":null,
     "name":"Сафронова Таисия Алексеевна",
-    "events":"-26741,33333",
-    "points":"14955151,41"
+    "events":null,
+    "points":null
   },
   {
-    "place":"26,82857143",
+    "place":null,
     "name":"Верухина Татьяна Алексеевна",
-    "events":"-27545,33333",
-    "points":"15365471,92"
+    "events":null,
+    "points":null
   },
   {
-    "place":"27,48571429",
+    "place":null,
     "name":"Разгонов Владимир Викторович",
-    "events":"-28349,33333",
-    "points":"15775792,44"
+    "events":null,
+    "points":null
   },
   {
-    "place":"28,14285714",
+    "place":null,
     "name":"Силивестрова Оксана Николаевна",
-    "events":"-29153,33333",
-    "points":"16186112,95"
+    "events":null,
+    "points":null
   },
   {
-    "place":"28,8",
+    "place":null,
     "name":"Ткач Софья Алексеевна",
-    "events":"-29957,33333",
-    "points":"16596433,47"
+    "events":null,
+    "points":null
   },
   {
-    "place":"29,45714286",
+    "place":null,
     "name":"Струц Анастасия",
-    "events":"-30761,33333",
-    "points":"17006753,98"
+    "events":null,
+    "points":null
   },
   {
-    "place":"30,11428571",
+    "place":null,
     "name":"Карсакова Ксения Сергеевна",
-    "events":"-31565,33333",
-    "points":"17417074,5"
+    "events":null,
+    "points":null
   },
   {
-    "place":"30,77142857",
+    "place":null,
     "name":"Титаренко Елена Сергеевна",
-    "events":"-32369,33333",
-    "points":"17827395,01"
+    "events":null,
+    "points":null
   },
   {
-    "place":"31,42857143",
+    "place":null,
     "name":"Афонькова Юлия Владимировна",
-    "events":"-33173,33333",
-    "points":"18237715,52"
+    "events":null,
+    "points":null
   },
   {
-    "place":"32,08571429",
+    "place":null,
     "name":"Разуева Ксения Дмитриевна",
-    "events":"-33977,33333",
-    "points":"18648036,04"
+    "events":null,
+    "points":null
   },
   {
-    "place":"32,74285714",
+    "place":null,
     "name":"Иванова Анастасия Игоревна",
-    "events":"-34781,33333",
-    "points":"19058356,55"
+    "events":null,
+    "points":null
   },
   {
-    "place":"33,4",
+    "place":null,
     "name":"Тастембекова Алмагуль Саматовна",
-    "events":"-35585,33333",
-    "points":"19468677,07"
+    "events":null,
+    "points":null
   },
   {
-    "place":"34,05714286",
+    "place":null,
     "name":"Саламатова Елизавета Дмитриевна",
-    "events":"-36389,33333",
-    "points":"19878997,58"
+    "events":null,
+    "points":null
   },
   {
-    "place":"34,71428571",
+    "place":null,
     "name":"Идрисова Валентина Георгиевна",
-    "events":"-37193,33333",
-    "points":"20289318,1"
+    "events":null,
+    "points":null
   },
   {
-    "place":"35,37142857",
+    "place":null,
     "name":"Артюхина Ольга Валериевна",
-    "events":"-37997,33333",
-    "points":"20699638,61"
+    "events":null,
+    "points":null
   },
   {
-    "place":"36,02857143",
+    "place":null,
     "name":"Кузнецов Егор Сергеевич",
-    "events":"-38801,33333",
-    "points":"21109959,12"
+    "events":null,
+    "points":null
   },
   {
-    "place":"36,68571429",
+    "place":null,
     "name":"Ользарович Евгения Алексеевна",
-    "events":"-39605,33333",
-    "points":"21520279,64"
+    "events":null,
+    "points":null
   },
   {
-    "place":"37,34285714",
+    "place":null,
     "name":"Низовцева Александра Александровна",
-    "events":"-40409,33333",
-    "points":"21930600,15"
+    "events":null,
+    "points":null
   },
   {
-    "place":"38",
+    "place":null,
     "name":"Непомнящих Василина Евгеньевна",
-    "events":"-41213,33333",
-    "points":"22340920,67"
+    "events":null,
+    "points":null
   },
   {
-    "place":"38,65714286",
+    "place":null,
     "name":"Сергеева Алиса Романовна",
-    "events":"-42017,33333",
-    "points":"22751241,18"
+    "events":null,
+    "points":null
   },
   {
-    "place":"39,31428571",
+    "place":null,
     "name":"Фёдорова Екатерина Евгеньевна",
-    "events":"-42821,33333",
-    "points":"23161561,7"
+    "events":null,
+    "points":null
   },
   {
-    "place":"39,97142857",
+    "place":null,
     "name":"Лещенко Василиса Михайловна",
-    "events":"-43625,33333",
-    "points":"23571882,21"
+    "events":null,
+    "points":null
   },
   {
-    "place":"40,62857143",
+    "place":null,
     "name":"Абраменко Ангелина Григорьевна",
-    "events":"-44429,33333",
-    "points":"23982202,72"
+    "events":null,
+    "points":null
   },
   {
-    "place":"41,28571429",
+    "place":null,
     "name":"Кизюн Софья Вячеславовна",
-    "events":"-45233,33333",
-    "points":"24392523,24"
+    "events":null,
+    "points":null
   },
   {
-    "place":"41,94285714",
+    "place":null,
     "name":"Стерликова Диана Дмитриевна",
-    "events":"-46037,33333",
-    "points":"24802843,75"
+    "events":null,
+    "points":null
   },
   {
-    "place":"42,6",
+    "place":null,
     "name":"Дрозд Анастасия Сергеевна",
-    "events":"-46841,33333",
-    "points":"25213164,27"
+    "events":null,
+    "points":null
   },
   {
-    "place":"43,25714286",
+    "place":null,
     "name":"Плеханова Александра Павловна",
-    "events":"-47645,33333",
-    "points":"25623484,78"
+    "events":null,
+    "points":null
   },
   {
-    "place":"43,91428571",
+    "place":null,
     "name":"Перевальская Мария Дмитриевна",
-    "events":"-48449,33333",
-    "points":"26033805,3"
+    "events":null,
+    "points":null
   },
   {
-    "place":"44,57142857",
+    "place":null,
     "name":"Веселова Дарья Дмитриевна",
-    "events":"-49253,33333",
-    "points":"26444125,81"
+    "events":null,
+    "points":null
   },
   {
-    "place":"45,22857143",
+    "place":null,
     "name":"Немова Екатерина Денисовна",
-    "events":"-50057,33333",
-    "points":"26854446,32"
+    "events":null,
+    "points":null
   },
   {
-    "place":"45,88571429",
+    "place":null,
     "name":"Волкова Маргарита",
-    "events":"-50861,33333",
-    "points":"27264766,84"
+    "events":null,
+    "points":null
   },
   {
-    "place":"46,54285714",
+    "place":null,
     "name":"Тимошенко Виктория Олеговна",
-    "events":"-51665,33333",
-    "points":"27675087,35"
+    "events":null,
+    "points":null
   },
   {
-    "place":"47,2",
+    "place":null,
     "name":"Конышев Максим Константинович",
-    "events":"-52469,33333",
-    "points":"28085407,87"
+    "events":null,
+    "points":null
   },
   {
-    "place":"47,85714286",
+    "place":null,
     "name":"Ребрий Виктория Денисовна",
-    "events":"-53273,33333",
-    "points":"28495728,38"
+    "events":null,
+    "points":null
   },
   {
-    "place":"48,51428571",
+    "place":null,
     "name":"Медведев Алексей Юрьевич",
-    "events":"-54077,33333",
-    "points":"28906048,9"
+    "events":null,
+    "points":null
   },
   {
-    "place":"49,17142857",
+    "place":null,
     "name":"Хорошавина Александра Андреевна",
-    "events":"-54881,33333",
-    "points":"29316369,41"
+    "events":null,
+    "points":null
   },
   {
-    "place":"49,82857143",
+    "place":null,
     "name":"Коваленко Ульяна Александровна",
-    "events":"-55685,33333",
-    "points":"29726689,92"
+    "events":null,
+    "points":null
   },
   {
-    "place":"50,48571429",
+    "place":null,
     "name":"Бабикова София",
-    "events":"-56489,33333",
-    "points":"30137010,44"
+    "events":null,
+    "points":null
   },
   {
-    "place":"51,14285714",
+    "place":null,
     "name":"Коркин Макар",
-    "events":"-57293,33333",
-    "points":"30547330,95"
+    "events":null,
+    "points":null
   },
   {
-    "place":"51,8",
+    "place":null,
     "name":"Кучерова Софья Ивановна",
-    "events":"-58097,33333",
-    "points":"30957651,47"
+    "events":null,
+    "points":null
   },
   {
-    "place":"52,45714286",
+    "place":null,
     "name":"Пиндюк Лев",
-    "events":"-58901,33333",
-    "points":"31367971,98"
+    "events":null,
+    "points":null
   },
   {
-    "place":"53,11428571",
+    "place":null,
     "name":"Халилов Рафаэль Анарович",
-    "events":"-59705,33333",
-    "points":"31778292,5"
+    "events":null,
+    "points":null
   },
   {
-    "place":"53,77142857",
+    "place":null,
     "name":"Кошукова Оляна Андреевна",
-    "events":"-60509,33333",
-    "points":"32188613,01"
+    "events":null,
+    "points":null
   },
   {
-    "place":"54,42857143",
+    "place":null,
     "name":"Дементьева Полина Юрьевна",
-    "events":"-61313,33333",
-    "points":"32598933,52"
+    "events":null,
+    "points":null
   },
   {
-    "place":"55,08571429",
+    "place":null,
     "name":"Притыко Дарья Денисовна",
-    "events":"-62117,33333",
-    "points":"33009254,04"
+    "events":null,
+    "points":null
   },
   {
-    "place":"55,74285714",
+    "place":null,
     "name":"Игнатенко Екатерина Викторовна",
-    "events":"-62921,33333",
-    "points":"33419574,55"
+    "events":null,
+    "points":null
   },
   {
-    "place":"56,4",
+    "place":null,
     "name":"Струк Мария Сергеевна",
-    "events":"-63725,33333",
-    "points":"33829895,07"
+    "events":null,
+    "points":null
   },
   {
-    "place":"57,05714286",
+    "place":null,
     "name":"Долганов Николай Александрович",
-    "events":"-64529,33333",
-    "points":"34240215,58"
+    "events":null,
+    "points":null
   },
   {
-    "place":"57,71428571",
+    "place":null,
     "name":"Карпова Мария Александровна",
-    "events":"-65333,33333",
-    "points":"34650536,1"
+    "events":null,
+    "points":null
   },
   {
-    "place":"58,37142857",
+    "place":null,
     "name":"Исаева Ольга Александровна",
-    "events":"-66137,33333",
-    "points":"35060856,61"
+    "events":null,
+    "points":null
   },
   {
-    "place":"59,02857143",
+    "place":null,
     "name":"Ляхов Александр Александрович",
-    "events":"-66941,33333",
-    "points":"35471177,12"
+    "events":null,
+    "points":null
   },
   {
-    "place":"59,68571429",
+    "place":null,
     "name":"Соколенко Виктория Викторовна",
-    "events":"-67745,33333",
-    "points":"35881497,64"
+    "events":null,
+    "points":null
   },
   {
-    "place":"60,34285714",
+    "place":null,
     "name":"Какаев Денис Васильевич",
-    "events":"-68549,33333",
-    "points":"36291818,15"
+    "events":null,
+    "points":null
   },
   {
-    "place":"61",
+    "place":null,
     "name":"Чучалина Валерия Павловна",
-    "events":"-69353,33333",
-    "points":"36702138,67"
+    "events":null,
+    "points":null
   },
   {
-    "place":"61,65714286",
+    "place":null,
     "name":"Колтыго Татьяна Анатольевна",
-    "events":"-70157,33333",
-    "points":"37112459,18"
+    "events":null,
+    "points":null
   },
   {
-    "place":"62,31428571",
+    "place":null,
     "name":"Тихий-Тищенко Анжелика Алексеевна",
-    "events":"-70961,33333",
-    "points":"37522779,7"
+    "events":null,
+    "points":null
   },
   {
-    "place":"62,97142857",
+    "place":null,
     "name":"Бабушкин Илья Денисович",
-    "events":"-71765,33333",
-    "points":"37933100,21"
+    "events":null,
+    "points":null
   },
   {
-    "place":"63,62857143",
+    "place":null,
     "name":"Марус Ева Максимовна",
-    "events":"-72569,33333",
-    "points":"38343420,72"
+    "events":null,
+    "points":null
   },
   {
-    "place":"64,28571429",
+    "place":null,
     "name":"Шишкина Людмила Владимировна",
-    "events":"-73373,33333",
-    "points":"38753741,24"
+    "events":null,
+    "points":null
   },
   {
-    "place":"64,94285714",
+    "place":null,
     "name":"Удовенко Дмитрий Владимирович",
-    "events":"-74177,33333",
-    "points":"39164061,75"
+    "events":null,
+    "points":null
   },
   {
-    "place":"65,6",
+    "place":null,
     "name":"Удовенко Мария Владимировна",
-    "events":"-74981,33333",
-    "points":"39574382,27"
+    "events":null,
+    "points":null
   },
   {
-    "place":"66,25714286",
+    "place":null,
     "name":"Паращук Сергей Алексеевич",
-    "events":"-75785,33333",
-    "points":"39984702,78"
+    "events":null,
+    "points":null
   },
   {
-    "place":"66,91428571",
+    "place":null,
     "name":"Парунов Иван Викторович",
-    "events":"-76589,33333",
-    "points":"40395023,3"
+    "events":null,
+    "points":null
   },
   {
-    "place":"67,57142857",
+    "place":null,
     "name":"Шиндяпина Арина Денисовна",
-    "events":"-77393,33333",
-    "points":"40805343,81"
+    "events":null,
+    "points":null
   },
   {
-    "place":"68,22857143",
+    "place":null,
     "name":"Денюшина Виктория Алексеевна",
-    "events":"-78197,33333",
-    "points":"41215664,32"
+    "events":null,
+    "points":null
   },
   {
-    "place":"68,88571429",
+    "place":null,
     "name":"Морозов Никита Евгеньевич",
-    "events":"-79001,33333",
-    "points":"41625984,84"
+    "events":null,
+    "points":null
   },
   {
-    "place":"69,54285714",
+    "place":null,
     "name":"Глушкова Варвара Евгеньевна",
-    "events":"-79805,33333",
-    "points":"42036305,35"
+    "events":null,
+    "points":null
   },
   {
-    "place":"70,2",
+    "place":null,
     "name":"Орлов Дмитрий Константинович",
-    "events":"-80609,33333",
-    "points":"42446625,87"
+    "events":null,
+    "points":null
   },
   {
-    "place":"70,85714286",
+    "place":null,
     "name":"Яковлева Ксения",
-    "events":"-81413,33333",
-    "points":"42856946,38"
+    "events":null,
+    "points":null
   },
   {
-    "place":"71,51428571",
+    "place":null,
     "name":"Скуратова Виктория",
-    "events":"-82217,33333",
-    "points":"43267266,9"
+    "events":null,
+    "points":null
   },
   {
-    "place":"72,17142857",
+    "place":null,
     "name":"Москавчук Станислав Владимирович",
-    "events":"-83021,33333",
-    "points":"43677587,41"
+    "events":null,
+    "points":null
   },
   {
-    "place":"72,82857143",
+    "place":null,
     "name":"Гречко Вадим",
-    "events":"-83825,33333",
-    "points":"44087907,92"
+    "events":null,
+    "points":null
   },
   {
-    "place":"73,48571429",
+    "place":null,
     "name":"Липов Андрей",
-    "events":"-84629,33333",
-    "points":"44498228,44"
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"#REF!",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"2",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"23",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"56",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":"565",
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
+  },
+  {
+    "place":null,
+    "name":null,
+    "events":null,
+    "points":null
   }
 ]
