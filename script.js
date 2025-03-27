@@ -15,7 +15,9 @@ createApp({
       
       if (this.searchQuery) {
         const query = this.searchQuery.toLowerCase();
-        result = result.filter(v => v.name.toLowerCase().includes(query));
+        result = result.filter(v => 
+          v.name.toLowerCase().includes(query)
+        );
       }
       
       return result.sort((a, b) => {
@@ -39,10 +41,9 @@ createApp({
     async fetchData() {
       try {
         const response = await fetch('data.json?v=' + new Date().getTime());
-        if (!response.ok) throw new Error('Ошибка загрузки');
         this.volunteers = await response.json();
       } catch (error) {
-        console.error('Ошибка:', error);
+        console.error('Ошибка загрузки данных:', error);
       }
     }
   },
