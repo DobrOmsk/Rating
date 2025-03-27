@@ -1,32 +1,38 @@
 [
   {
+    "place":1,
     "name":"впавп",
     "events":23,
-    "points":1752,
-    "place":3
+    "points":1752
   },
   {
-    "name":"ваправ",
-    "events":255,
-    "points":5218,
-    "place":4
-  },
-  {
+    "place":2,
     "name":"рвптва",
     "events":25,
-    "points":25592,
-    "place":2
+    "points":25592
   },
   {
+    "place":3,
     "name":"впркрк",
     "events":52,
-    "points":5855,
-    "place":1
+    "points":5855
   },
   {
+    "place":4,
     "name":"авпоад",
     "events":46,
-    "points":4687678,
-    "place":5
+    "points":4687678
+  },
+  {
+    "place":5,
+    "name":"ваправ",
+    "events":255,
+    "points":5218
+  },
+  {
+    "place":6,
+    "name":"врв",
+    "events":47,
+    "points":68467
   }
 ]
