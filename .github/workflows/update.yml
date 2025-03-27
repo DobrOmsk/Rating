@@ -1,56 +1,52 @@
 name: Update Volunteer Data
 on:
   schedule:
-    - cron: '0 * * * *'
-  workflow_dispatch:
+    - cron: '0 * * * *'  # Обновление каждый час
+  workflow_dispatch:     # Разрешить ручной запуск
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
         with:
-          fetch-depth: 0
+          python-version: '3.10'
 
-      - name: Setup environment
+      - name: Install dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install -y python3
-          python3 -m pip install pandas
+          python -m pip install pandas
 
-      - name: Download and process data
+      - name: Download data
         run: |
-          # Скачивание данных (3 попытки)
-          for i in {1..3}; do
-            curl -L -f "https://docs.google.com/spreadsheets/d/e/2PACX-1vT1ZqIl-YoI4bkefOkLBYPj3QcVEsXgnnhfW65ku2gvNj65ungX5tIpzbRo9DMTMaqSlvats--5e5V_/pub?gid=0&single=true&output=csv" -o data.csv && break || sleep 5
-          done || { echo "::error::Не удалось скачать CSV"; exit 1; }
+          # Простое скачивание без сложных проверок
+          curl -L "https://docs.google.com/spreadsheets/d/e/2PACX-1vT1ZqIl-YoI4bkefOkLBYPj3QcVEsXgnnhfW65ku2gvNj65ungX5tIpzbRo9DMTMaqSlvats--5e5V_/pub?gid=0&single=true&output=csv" -o data.csv
 
-          # Конвертация в JSON
-          python3 -c "
+      - name: Convert to JSON
+        run: |
+          python -c "
           import pandas as pd
-          df = pd.read_csv('data.csv', encoding='utf-8-sig')
-          df = df[['ФИО', 'Мероприятия', 'Баллы', 'Место']]
-          df.columns = ['name', 'events', 'points', 'place']
-          df.to_json('data.json', orient='records', force_ascii=False, indent=2)
+          try:
+              df = pd.read_csv('data.csv')
+              df = df[['ФИО', 'Мероприятия', 'Баллы', 'Место']]
+              df.columns = ['name', 'events', 'points', 'place']
+              df.to_json('data.json', orient='records', indent=2)
+              print('Конвертация успешна')
+          except Exception as e:
+              print(f'Ошибка: {e}')
+              exit(1)
           "
 
-
-      - name: Commit and push changes
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit and Push
         run: |
-          # Настройка Git
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-          git config --global http.https://github.com/.extraheader "AUTHORIZATION: basic $(echo -n "x-access-token:${{ secrets.GITHUB_TOKEN }}" | base64)"
-
-          # Коммит и пуш
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@users.noreply.github.com"
+          
           git add data.json
-          if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "Automatic data update: $(date +'%Y-%m-%d %H:%M')"
-            git pull --rebase
-            git push origin HEAD:main
-          else
-            echo "No changes to commit"
-          fi
+          git commit -m "Обновление данных $(date +'%Y-%m-%d %H:%M')" || echo "Нет изменений"
+          
+          # Простой push без rebase
+          git pull
+          git push
