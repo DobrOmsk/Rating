@@ -6,8 +6,9 @@ body {
   padding: 0;
   color: #333;
   background: 
-    linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%),
-    url('bg-pattern.png') repeat;
+    linear-gradient(135deg, #e4e8f0 0%, #f5f7fa 100%),
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><polygon points="50,0 61,35 98,35 68,57 79,92 50,70 21,92 32,57 2,35 39,35" fill="rgba(106, 17, 203, 0.05)"/></svg>') repeat;
+  background-attachment: fixed;
   min-height: 100vh;
 }
 
@@ -129,6 +130,17 @@ th {
   letter-spacing: 0.5px;
   position: sticky;
   top: 0;
+  position: relative;
+}
+
+th:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
 }
 
 td {
@@ -155,6 +167,10 @@ tr:hover td {
   border-bottom-color: rgba(255, 255, 255, 0.2);
 }
 
+.first-place:hover td {
+  background: rgba(106, 17, 203, 0.8);
+}
+
 .second-place {
   background: linear-gradient(135deg, #2575fc 0%, #4a8ef9 100%);
   color: white;
@@ -165,6 +181,10 @@ tr:hover td {
   border-bottom-color: rgba(255, 255, 255, 0.2);
 }
 
+.second-place:hover td {
+  background: rgba(37, 117, 252, 0.8);
+}
+
 .third-place {
   background: linear-gradient(135deg, #4a8ef9 0%, #64b5f6 100%);
   color: white;
@@ -173,6 +193,10 @@ tr:hover td {
 .third-place td {
   color: white;
   border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.third-place:hover td {
+  background: rgba(74, 142, 249, 0.8);
 }
 
 /* Стили столбцов */
@@ -312,15 +336,30 @@ input:focus {
   }
   
   .place-col {
-    width: 60px;
+    width: 50px;
   }
   
   .events-col {
-    width: 80px;
+    width: 50px;
   }
   
   .points-col {
-    width: 90px;
+    width: 70px;
+  }
+  
+  .name-col {
+    max-width: calc(100% - 170px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  th.events-col::before {
+    content: "ДД";
+  }
+  
+  th.events-col span {
+    display: none;
   }
 
   .contacts-footer {
@@ -340,8 +379,27 @@ input:focus {
     left: -15px;
   }
   
+  .place-col {
+    width: 40px;
+    padding: 12px 5px;
+  }
+  
+  .events-col {
+    width: 40px;
+    padding: 12px 5px;
+  }
+  
+  .points-col {
+    width: 60px;
+    padding: 12px 5px;
+  }
+  
   .name-col {
-    max-width: 120px;
+    max-width: calc(100% - 140px);
+  }
+  
+  th, td {
+    padding: 10px 5px;
   }
 }
 
