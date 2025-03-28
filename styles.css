@@ -6,79 +6,169 @@ body {
   padding: 0;
   color: #333;
   background: 
-    linear-gradient(135deg, rgba(228, 232, 240, 0.9) 0%, rgba(245, 247, 250, 0.9) 100%),
-    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><polygon points="50,0 61,35 98,35 68,57 79,92 50,70 21,92 32,57 2,35 39,35" fill="rgba(106, 17, 203, 0.05)"/></svg>') repeat;
-  background-attachment: fixed;
+    linear-gradient(135deg, #e4e8f0 0%, #f5f7fa 100%);
   min-height: 100vh;
 }
 
-/* ... (остальные стили остаются без изменений до @media запросов) ... */
+.logo-container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-/* Адаптивность */
+.logo {
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  width: 120px;
+  height: auto;
+  z-index: 100;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.header {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  padding: 2.5rem;
+  margin: 2rem auto;
+  border-radius: 25px;
+  max-width: 900px;
+  position: relative;
+}
+
+#app {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  padding: 0 20px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(106, 17, 203, 0.1);
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #f0f4f8;
+}
+
+th {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  font-weight: 500;
+  position: sticky;
+  top: 0;
+}
+
+.first-place {
+  background: #6a11cb;
+  color: white;
+}
+
+.second-place {
+  background: #2575fc;
+  color: white;
+}
+
+.third-place {
+  background: #4a8ef9;
+  color: white;
+}
+
+.place-col {
+  width: 80px;
+  text-align: center;
+}
+
+.name-col {
+  width: auto;
+}
+
+.events-col, .points-col {
+  width: 100px;
+  text-align: center;
+}
+
+.controls {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  padding: 12px 20px;
+  border-radius: 50px;
+  border: 2px solid #6a11cb;
+  width: 100%;
+  max-width: 350px;
+}
+
+.show-more-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.show-more-btn {
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
-  /* ... (предыдущие стили остаются) ... */
+  .header {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .logo {
+    width: 80px;
+    top: -15px;
+    left: -15px;
+  }
   
   .place-col {
-    width: 60px; /* Увеличено с 50px */
+    width: 60px;
   }
   
   .events-col {
     width: 50px;
   }
   
-  .points-col {
-    width: 70px;
-  }
-  
   .name-col {
-    max-width: calc(100% - 180px); /* Уменьшено на 10px для компенсации */
+    max-width: 150px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
   
-  /* Центрирование заголовка ФИО */
-  th.name-col {
-    text-align: center;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  
-  th.events-col::before {
-    content: "ДД";
-  }
-  
   th.events-col span {
     display: none;
+  }
+  
+  th.events-col::after {
+    content: "ДД";
   }
 }
 
 @media (max-width: 480px) {
-  /* ... (предыдущие стили остаются) ... */
-  
   .place-col {
-    width: 50px; /* Увеличено с 40px */
-    padding: 12px 5px;
-  }
-  
-  .events-col {
-    width: 40px;
-    padding: 12px 5px;
-  }
-  
-  .points-col {
-    width: 60px;
-    padding: 12px 5px;
+    width: 50px;
   }
   
   .name-col {
-    max-width: calc(100% - 150px); /* Уменьшено на 10px для компенсации */
-  }
-  
-  /* Центрирование заголовка ФИО */
-  th.name-col {
-    text-align: center;
-    padding-left: 5px;
-    padding-right: 5px;
+    max-width: 120px;
   }
 }
