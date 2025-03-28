@@ -7,7 +7,7 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="styles.css?v=6">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto+Flex:wght@400;500&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
@@ -32,7 +32,6 @@
         </span>
       </p>
     </header>
-
 
     <main>
       <div class="controls">
@@ -89,17 +88,18 @@
       <p>Email: <a href="mailto:dobro617720@gmail.com">dobro617720@gmail.com</a></p>
       <p>Канал с вакансиями: <a href="http://t.me/volunteer_omsk55" target="_blank">http://t.me/volunteer_omsk55</a></p>
     </footer>
-  </div>
-  
-  <div class="modal-overlay" v-if="showRatingInfo" @click.self="toggleRatingInfo">
-    <div class="modal-content">
-      <button class="modal-close" @click="toggleRatingInfo(false)">×</button>
-      <h3>Как формируется рейтинг?</h3>
-      <p>Рейтинг — это отражение вклада каждого волонтера: он учитывает посещённые мероприятия, отработанные часы, сложность задач, а также надёжность и инициативность волонтёра. Цифры показывают не только активность, но и готовность быть там, где нужна помощь</p>
-      <p class="modal-note">*Для составления рейтинга учитываются только часы с платформы Добро.РФ</p>
+
+    <!-- Модальное окно -->
+    <div class="modal-overlay" v-if="showRatingInfo" @click.self="toggleRatingInfo">
+      <div class="modal-content">
+        <button class="modal-close" @click="toggleRatingInfo(false)">×</button>
+        <h3>Как формируется рейтинг?</h3>
+        <p>Рейтинг — это отражение вклада каждого волонтера: он учитывает посещённые мероприятия, отработанные часы, сложность задач, а также надёжность и инициативность волонтёра. Цифры показывают не только активность, но и готовность быть там, где нужна помощь</p>
+        <p class="modal-note">*Для составления рейтинга учитываются только часы с платформы Добро.РФ</p>
+      </div>
     </div>
   </div>
-  
-  <script src="script.js?v=5"></script>
+
+  <script src="script.js?v=6"></script>
 </body>
 </html>
