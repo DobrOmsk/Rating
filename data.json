@@ -330,7 +330,7 @@
     "points":16
   },
   {
-    "place":2,
+    "place":3,
     "name":"Киселёва Мария Сергеевна",
     "events":3.0,
     "points":63
@@ -900,7 +900,7 @@
     "points":22
   },
   {
-    "place":2,
+    "place":3,
     "name":"Халилов Рафаэль Анарович",
     "events":5.0,
     "points":63
@@ -1152,9 +1152,9 @@
     "points":18
   },
   {
-    "place":4,
+    "place":2,
     "name":"врврвв",
     "events":0.0,
-    "points":62
+    "points":64
   }
 ]
