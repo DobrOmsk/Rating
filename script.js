@@ -8,6 +8,7 @@ createApp({
       sortField: 'place',
       sortDirection: 'asc',
       visibleCount: 50 // Начальное количество отображаемых записей
+      showRatingInfo: false
     }
   },
   computed: {
@@ -64,6 +65,11 @@ createApp({
         app.style.minHeight = app.scrollHeight + 'px';
       }
     }
+
+    toggleRatingInfo() {
+      this.showRatingInfo = !this.showRatingInfo;
+    }
+    
   },
   mounted() {
     this.fetchData();
