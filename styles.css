@@ -208,4 +208,99 @@ input {
   padding: 15px 25px;
   border-radius: 50px;
   border: 2px solid #6a11cb;
-  width: 350px
+  width: 350px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 5px 15px rgba(106, 17, 203, 0.1);
+  font-family: 'Roboto Flex', sans-serif;
+}
+
+input:focus {
+  border-color: #2575fc;
+  box-shadow: 0 0 0 4px rgba(37, 117, 252, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .header {
+    padding: 1.8rem 1.8rem 1.8rem 5rem;
+    margin: 1rem;
+    text-align: left;
+  }
+  
+  .header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .header p {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+  
+  .logo {
+    width: 100px;
+    top: -20px;
+    left: -20px;
+  }
+  
+  th, td {
+    padding: 12px 8px;
+    font-size: 0.9rem;
+  }
+  
+  input {
+    width: 90%;
+    padding: 12px 20px;
+  }
+  
+  .place-col {
+    width: 60px;
+  }
+  
+  .events-col {
+    width: 80px;
+  }
+  
+  .points-col {
+    width: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 1.5rem 1.5rem 1.5rem 4.5rem;
+  }
+  
+  .logo {
+    width: 90px;
+    top: -15px;
+    left: -15px;
+  }
+  
+  .name-col {
+    max-width: 120px;
+  }
+}
+
+/* Анимации */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+table {
+  animation: fadeIn 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.header h1 {
+  animation: float 4s ease-in-out infinite;
+}
