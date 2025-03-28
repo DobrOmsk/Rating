@@ -114,3 +114,34 @@ table {
   background: rgba(255, 255, 255, 0.92);
   /* ... */
 }
+
+/* Основной фон с звездами */
+body {
+  background: 
+    linear-gradient(to bottom, #001a3d 0%, #000814 100%),
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200"><g fill="%23ffffff" opacity="0.8"><circle cx="200" cy="150" r="2"/><circle cx="800" cy="350" r="1.5"/><circle cx="400" cy="700" r="2"/><circle cx="1000" cy="200" r="1.5"/><circle cx="150" cy="900" r="2"/><circle cx="700" cy="600" r="1.5"/></g></svg>');
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Анимация мерцания звезд */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* Контейнер для контента */
+#app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Убираем все трансформации у таблицы */
+.table-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  transform: none !important;
+}
