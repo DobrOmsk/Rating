@@ -359,7 +359,7 @@ input:focus {
   text-decoration: underline;
 }
 
-/* Стили модального окна */
+/* Стили для модального окна */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -371,7 +371,7 @@ input:focus {
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  backdrop-filter: blur(5px);
+  animation: fadeIn 0.3s;
 }
 
 .modal-content {
@@ -381,46 +381,43 @@ input:focus {
   max-width: 500px;
   width: 90%;
   position: relative;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  animation: fadeIn 0.3s ease-out;
-}
-
-.modal-content h3 {
-  color: #6a11cb;
-  margin-top: 0;
-  font-size: 1.5rem;
-}
-
-.modal-content p {
-  margin: 1rem 0;
-  line-height: 1.6;
-}
-
-.modal-note {
-  font-size: 0.9rem;
-  color: #666;
-  font-style: italic;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .modal-close {
   position: absolute;
-  top: 15px;
+  top: 10px;
   right: 15px;
+  font-size: 1.5rem;
   background: none;
   border: none;
-  font-size: 1.5rem;
   cursor: pointer;
-  color: #999;
-  transition: color 0.3s;
-  padding: 0 10px;
-  line-height: 1;
+  color: #666;
 }
 
 .modal-close:hover {
-  color: #6a11cb;
-  background: none;
+  color: #333;
 }
 
+.rating-info-trigger {
+  color: #ffeb3b;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.rating-info-trigger:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 /* Адаптивность */
 @media (max-width: 768px) {
   .header {
