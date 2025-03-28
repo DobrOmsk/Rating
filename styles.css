@@ -450,7 +450,102 @@ input:focus {
     padding: 10px 5px;
   }
 }
+/* Стили для текста "Как формируется рейтинг?" */
+.rating-info-trigger {
+  color: #ffeb3b;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
 
+.rating-info-trigger:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Стили модального окна */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-out;
+}
+
+.modal-content h3 {
+  color: #6a11cb;
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.modal-content p {
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+.modal-note {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #999;
+  transition: color 0.3s;
+}
+
+.modal-close:hover {
+  color: #6a11cb;
+}
+
+/* Адаптивные стили для модального окна */
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 1.5rem;
+  }
+  
+  .rating-info-trigger {
+    display: inline-block;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 1.2rem;
+  }
+  
+  .modal-content h3 {
+    font-size: 1.3rem;
+  }
+}
 /* Анимации */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(30px); }
