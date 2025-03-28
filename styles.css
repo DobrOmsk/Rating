@@ -348,12 +348,12 @@ input:focus {
   }
   
   .place-col {
-    width: 60px; /* Увеличено с 50px */
-    padding: 12px 8px 12px 12px; /* Добавлен отступ слева */
+    width: 65px; /* Увеличено с 50px */
+    padding: 12px 5px 12px 10px; /* Добавлен отступ слева */
   }
   
   .events-col {
-    width: 50px;
+    width: 45px;
   }
   
   .points-col {
@@ -365,6 +365,10 @@ input:focus {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+
+  th.name-col {
+    text-align: center;
   }
   
   th.events-col::before {
@@ -393,12 +397,12 @@ input:focus {
   }
   
   .place-col {
-    width: 50px; /* Увеличено с 40px */
+    width: 60px; /* Увеличено с 40px */
     padding: 12px 5px 12px 8px; /* Добавлен отступ слева */
   }
   
   .events-col {
-    width: 40px;
+    width: 35px;
   }
   
   .points-col {
@@ -409,6 +413,9 @@ input:focus {
     max-width: calc(100% - 155px); /* Уменьшено для компенсации увеличения place-col */
   }
   
+  th.name-col {
+    text-align: center;
+  }
   
   th, td {
     padding: 10px 5px;
