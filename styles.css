@@ -348,7 +348,8 @@ input:focus {
   }
   
   .place-col {
-    width: 50px;
+    width: 65px; /* Увеличено с 50px */
+    padding: 12px 8px 12px 12px; /* Добавлен отступ слева */
   }
   
   .events-col {
@@ -360,11 +361,12 @@ input:focus {
   }
   
   .name-col {
-    max-width: calc(100% - 170px);
+    max-width: calc(100% - 185px); /* Уменьшено для компенсации увеличения place-col */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
+}
   
   th.events-col::before {
     content: "ДД";
@@ -387,28 +389,27 @@ input:focus {
   
   .logo {
     width: 90px;
-    top: -15px;
-    left: -15px;
+    top: -10px;
+    left: 5px;
   }
   
   .place-col {
-    width: 40px;
-    padding: 12px 5px;
+    width: 55px; /* Увеличено с 40px */
+    padding: 12px 5px 12px 8px; /* Добавлен отступ слева */
   }
   
   .events-col {
     width: 40px;
-    padding: 12px 5px;
   }
   
   .points-col {
     width: 60px;
-    padding: 12px 5px;
   }
   
   .name-col {
-    max-width: calc(100% - 140px);
+    max-width: calc(100% - 155px); /* Уменьшено для компенсации увеличения place-col */
   }
+  
   
   th, td {
     padding: 10px 5px;
