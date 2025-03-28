@@ -7,23 +7,26 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=3">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto+Flex:wght@400;500&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
-  <!-- Логотип -->
-  <a href="/" class="logo-link">
-    <img 
-      src="esH8bnrPPqY.jpg" 
-      alt="Ресурсный центр развития добровольчества Омской области" 
-      class="logo"
-    >
-  </a>
-
   <div id="app">
+    <!-- Логотип -->
+    <div class="logo-container">
+      <a href="/" class="logo-link">
+        <img 
+          src="esH8bnrPPqY.jpg" 
+          alt="Ресурсный центр развития добровольчества Омской области" 
+          class="logo"
+        >
+      </a>
+    </div>
+
     <!-- Шапка с описанием -->
     <header class="header">
-      <h1> Рейтинг волонтёров</h1>
+      <h1>Рейтинг волонтёров</h1>
       <p>Список самых активных участников нашего движения</p>
     </header>
 
@@ -36,30 +39,41 @@
         >
       </div>
 
-      <table>
-        <thead>
-          <tr>
-            <th>Место</th>
-            <th>ФИО</th>
-            <th>Добрые дела</th>
-            <th>Баллы</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-if="volunteers.length === 0">
-            <td colspan="4" class="loading">Загрузка данных...</td>
-          </tr>
-          <tr v-else v-for="volunteer in filteredVolunteers" :key="volunteer.name">
-            <td>{{ volunteer.place }}</td>
-            <td>{{ volunteer.name }}</td>
-            <td>{{ volunteer.events }}</td>
-            <td>{{ volunteer.points.toLocaleString() }}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th class="place-col">Место</th>
+              <th class="name-col">ФИО</th>
+              <th class="events-col">Добрые дела</th>
+              <th class="points-col">Баллы</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-if="volunteers.length === 0">
+              <td colspan="4" class="loading">Загрузка данных...</td>
+            </tr>
+            <tr 
+              v-else 
+              v-for="volunteer in filteredVolunteers" 
+              :key="volunteer.name"
+              :class="{
+                'first-place': volunteer.place === 1,
+                'second-place': volunteer.place === 2,
+                'third-place': volunteer.place === 3
+              }"
+            >
+              <td class="place-col">{{ volunteer.place }}</td>
+              <td class="name-col">{{ volunteer.name }}</td>
+              <td class="events-col">{{ volunteer.events }}</td>
+              <td class="points-col">{{ volunteer.points.toLocaleString() }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </main>
   </div>
 
-  <script src="script.js?v=2"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>
