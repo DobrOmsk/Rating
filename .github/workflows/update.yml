@@ -21,7 +21,7 @@ jobs:
           pip install PyGithub
       - name: Download data
         run: |
-          curl -L -f "https://docs.google.com/spreadsheets/d/e/2PACX-1vT1ZqIl-YoI4bkefOkLBYPj3QcVEsXgnnhfW65ku2gvNj65ungX5tIpzbRo9DMTMaqSlvats--5e5V_/pub?gid=0&single=true&output=csv" -o data.csv
+          curl -L -f "https://docs.google.com/spreadsheets/d/e/2PACX-1vQGH1TXR6ZvmpijJnoZDvlthVeWgiBBhWcq9AfEk-HOHeO4GaMf1ExUODAZhL4isGTlL896tKggrlg3/pub?gid=0&single=true&output=csv" -o data.csv
       - name: Process data
         run: |
           python -c "
