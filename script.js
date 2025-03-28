@@ -7,7 +7,7 @@ createApp({
       searchQuery: '',
       sortField: 'place',
       sortDirection: 'asc',
-      visibleCount: 50, // Начальное количество отображаемых записей
+      visibleCount: 50,
       showRatingInfo: false
     }
   },
@@ -17,9 +17,7 @@ createApp({
       
       if (this.searchQuery) {
         const query = this.searchQuery.toLowerCase();
-        result = result.filter(v => 
-          v.name.toLowerCase().includes(query)
-        );
+        result = result.filter(v => v.name.toLowerCase().includes(query));
       }
       
       return result.sort((a, b) => a.place - b.place);
@@ -48,7 +46,6 @@ createApp({
         this.$nextTick(() => {
           this.updateAppHeight();
         });
-        
       } catch (error) {
         console.error('Ошибка:', error);
       }
@@ -64,20 +61,11 @@ createApp({
       if (app) {
         app.style.minHeight = app.scrollHeight + 'px';
       }
-    },
-
-    toggleRatingInfo(forceClose = false) {
-      if (forceClose) {
-        this.showRatingInfo = false;
-      } else {
-        this.showRatingInfo = !this.showRatingInfo;
-      }
     }
-    
   },
   mounted() {
     this.fetchData();
     setInterval(this.fetchData, 300000);
-    this.updateAppHeight(); // Первоначальная установка высоты
+    this.updateAppHeight();
   }
 }).mount('#app');
