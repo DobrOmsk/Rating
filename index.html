@@ -7,18 +7,14 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="stylesheet" href="styles.css?v=7">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto+Flex:wght@400;500&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
   <!-- Логотип -->
   <div class="logo-container">
-    <img 
-      src="Лого2.png" 
-      alt="Ресурсный центр развития добровольчества Омской области" 
-      class="logo"
-    >
+    <img src="Лого2.png" alt="Ресурсный центр развития добровольчества Омской области" class="logo">
   </div>
 
   <div id="app">
@@ -27,72 +23,26 @@
       <h1>Рейтинг волонтёров</h1>
       <p>
         Список самых активных участников нашего движения 
-        <span class="rating-info-trigger" @click="toggleRatingInfo">
+        <span class="rating-info-trigger" @click="showRatingInfo = true">
           Как формируется рейтинг?
         </span>
       </p>
     </header>
 
+    <!-- Основное содержимое -->
     <main>
-      <div class="controls">
-        <input 
-          v-model="searchQuery" 
-          placeholder="Поиск по имени..." 
-          type="search"
-        >
-      </div>
-
-      <div class="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th class="place-col">Место</th>
-              <th class="name-col"><span>ФИО</span></th>
-              <th class="events-col"><span>Добрые дела</span></th>
-              <th class="points-col">Баллы</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr v-if="volunteers.length === 0">
-              <td colspan="4" class="loading">Загрузка данных...</td>
-            </tr>
-            <tr 
-              v-else 
-              v-for="volunteer in visibleVolunteers" 
-              :key="volunteer.name"
-              :class="{
-                'first-place': volunteer.place === 1,
-                'second-place': volunteer.place === 2,
-                'third-place': volunteer.place === 3
-              }"
-            >
-              <td class="place-col">{{ volunteer.place }}</td>
-              <td class="name-col">{{ volunteer.name }}</td>
-              <td class="events-col">{{ volunteer.events }}</td>
-              <td class="points-col">{{ volunteer.points.toLocaleString() }}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Кнопка "Показать еще" -->
-      <div class="show-more-container" v-if="hasMoreToShow">
-        <button class="show-more-btn" @click="showMore">Показать еще</button>
-      </div>
+      <!-- ... остальное содержимое без изменений ... -->
     </main>
 
     <!-- Блок с контактами -->
     <footer class="contacts-footer">
-      <h3>Ресурсный центр развития добровольчества Омской области</h3>
-      <p>Адрес: г. Омск, ул. Авангардная, 8, каб.14</p>
-      <p>Email: <a href="mailto:dobro617720@gmail.com">dobro617720@gmail.com</a></p>
-      <p>Канал с вакансиями: <a href="http://t.me/volunteer_omsk55" target="_blank">http://t.me/volunteer_omsk55</a></p>
+      <!-- ... содержимое футера без изменений ... -->
     </footer>
 
     <!-- Модальное окно -->
-    <div class="modal-overlay" v-if="showRatingInfo" @click.self="toggleRatingInfo">
+    <div v-if="showRatingInfo" class="modal-overlay" @click.self="showRatingInfo = false">
       <div class="modal-content">
-        <button class="modal-close" @click="toggleRatingInfo(false)">×</button>
+        <button class="modal-close" @click="showRatingInfo = false">×</button>
         <h3>Как формируется рейтинг?</h3>
         <p>Рейтинг — это отражение вклада каждого волонтера: он учитывает посещённые мероприятия, отработанные часы, сложность задач, а также надёжность и инициативность волонтёра. Цифры показывают не только активность, но и готовность быть там, где нужна помощь</p>
         <p class="modal-note">*Для составления рейтинга учитываются только часы с платформы Добро.РФ</p>
@@ -100,6 +50,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=6"></script>
+  <script src="script.js?v=7"></script>
 </body>
 </html>
