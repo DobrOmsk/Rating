@@ -66,8 +66,12 @@ createApp({
       }
     }
 
-    toggleRatingInfo() {
-      this.showRatingInfo = !this.showRatingInfo;
+    toggleRatingInfo(forceClose = false) {
+      if (forceClose) {
+        this.showRatingInfo = false;
+      } else {
+        this.showRatingInfo = !this.showRatingInfo;
+      }
     }
     
   },
