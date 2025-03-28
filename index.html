@@ -7,21 +7,21 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=3">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto+Flex:wght@400;500&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
-  <div id="app">
-    <!-- Логотип -->
-    <div class="logo-container">
-      <img 
-        src="Лого2.png" 
-        alt="Ресурсный центр развития добровольчества Омской области" 
-        class="logo"
-      >
-    </div>
+  <!-- Логотип -->
+  <div class="logo-container">
+    <img 
+      src="esH8bnrPPqY.jpg" 
+      alt="Ресурсный центр развития добровольчества Омской области" 
+      class="logo"
+    >
+  </div>
 
+  <div id="app">
     <!-- Шапка с описанием -->
     <header class="header">
       <h1>Рейтинг волонтёров</h1>
@@ -53,7 +53,7 @@
             </tr>
             <tr 
               v-else 
-              v-for="volunteer in filteredVolunteers" 
+              v-for="volunteer in visibleVolunteers" 
               :key="volunteer.name"
               :class="{
                 'first-place': volunteer.place === 1,
@@ -69,7 +69,21 @@
           </tbody>
         </table>
       </div>
+
+      <!-- Кнопка "Показать еще" -->
+      <div class="show-more-container" v-if="hasMoreToShow">
+        <button class="show-more-btn" @click="showMore">Показать еще</button>
+      </div>
     </main>
+
+    <!-- Блок с контактами -->
+    <footer class="contacts-footer">
+      <h3>{{ contacts.organization }}</h3>
+      <p>Адрес: {{ contacts.address }}</p>
+      <p>Телефон: {{ contacts.phone }}</p>
+      <p>Email: <a :href="'mailto:' + contacts.email">{{ contacts.email }}</a></p>
+      <p>Сайт: <a :href="'https://' + contacts.website" target="_blank">{{ contacts.website }}</a></p>
+    </footer>
   </div>
 
   <script src="script.js?v=3"></script>
