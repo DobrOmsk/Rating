@@ -25,8 +25,14 @@
     <!-- Шапка с описанием -->
     <header class="header">
       <h1>Рейтинг волонтёров</h1>
-      <p>Список самых активных участников нашего движения</p>
+      <p>
+        Список самых активных участников нашего движения 
+        <span class="rating-info-trigger" @click="toggleRatingInfo">
+          Как формируется рейтинг?
+        </span>
+      </p>
     </header>
+
 
     <main>
       <div class="controls">
@@ -84,7 +90,16 @@
       <p>Канал с вакансиями: <a href="http://t.me/volunteer_omsk55" target="_blank">http://t.me/volunteer_omsk55</a></p>
     </footer>
   </div>
-
+  
+  <div class="modal-overlay" v-if="showRatingInfo" @click.self="toggleRatingInfo">
+    <div class="modal-content">
+      <button class="modal-close" @click="toggleRatingInfo">×</button>
+      <h3>Как формируется рейтинг?</h3>
+      <p>Рейтинг — это отражение вклада каждого волонтера: он учитывает посещённые мероприятия, отработанные часы, сложность задач, а также надёжность и инициативность волонтёра. Цифры показывают не только активность, но и готовность быть там, где нужна помощь</p>
+      <p class="modal-note">*Для составления рейтинга учитываются только часы с платформы Добро.РФ</p>
+    </div>
+  </div>
+  
   <script src="script.js?v=5"></script>
 </body>
 </html>
