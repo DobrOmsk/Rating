@@ -7,7 +7,7 @@ createApp({
       searchQuery: '',
       sortField: 'place',
       sortDirection: 'asc',
-      visibleCount: 50 // Начальное количество отображаемых записей
+      visibleCount: 50, // Начальное количество отображаемых записей
       showRatingInfo: false
     }
   },
@@ -64,7 +64,7 @@ createApp({
       if (app) {
         app.style.minHeight = app.scrollHeight + 'px';
       }
-    }
+    },
 
     toggleRatingInfo(forceClose = false) {
       if (forceClose) {
