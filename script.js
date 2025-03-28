@@ -44,16 +44,30 @@ createApp({
           place: Number(item.place) || 0
         }));
         
+        this.$nextTick(() => {
+          this.updateAppHeight();
+        });
+        
       } catch (error) {
         console.error('Ошибка:', error);
       }
     },
     showMore() {
       this.visibleCount += 50;
+      this.$nextTick(() => {
+        this.updateAppHeight();
+      });
+    },
+    updateAppHeight() {
+      const app = document.getElementById('app');
+      if (app) {
+        app.style.minHeight = app.scrollHeight + 'px';
+      }
     }
   },
   mounted() {
     this.fetchData();
     setInterval(this.fetchData, 300000);
+    this.updateAppHeight(); // Первоначальная установка высоты
   }
 }).mount('#app');
