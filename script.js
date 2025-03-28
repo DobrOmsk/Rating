@@ -6,7 +6,15 @@ createApp({
       volunteers: [],
       searchQuery: '',
       sortField: 'place',
-      sortDirection: 'asc'
+      sortDirection: 'asc',
+      visibleCount: 50, // Показываем первые 50 записей
+      contacts: {
+        organization: "Ресурсный центр развития добровольчества Омской области",
+        address: "г. Омск, ул. Примерная, 123",
+        phone: "+7 (3812) 12-34-56",
+        email: "volunteer@omsk.ru",
+        website: "www.omsk-volunteer.ru"
+      }
     }
   },
   computed: {
@@ -21,6 +29,12 @@ createApp({
       }
       
       return result.sort((a, b) => a.place - b.place);
+    },
+    visibleVolunteers() {
+      return this.filteredVolunteers.slice(0, this.visibleCount);
+    },
+    hasMoreToShow() {
+      return this.visibleCount < this.filteredVolunteers.length;
     }
   },
   methods: {
@@ -40,6 +54,9 @@ createApp({
       } catch (error) {
         console.error('Ошибка:', error);
       }
+    },
+    showMore() {
+      this.visibleCount += 50; // Показываем еще 50 записей
     }
   },
   mounted() {
