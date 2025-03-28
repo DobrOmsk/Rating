@@ -348,7 +348,7 @@ input:focus {
   }
   
   .place-col {
-    width: 65px; /* Увеличено с 50px */
+    width: 60px; /* Увеличено с 50px */
     padding: 12px 8px 12px 12px; /* Добавлен отступ слева */
   }
   
@@ -361,7 +361,7 @@ input:focus {
   }
   
   .name-col {
-    max-width: calc(100% - 185px); /* Уменьшено для компенсации увеличения place-col */
+    max-width: calc(100% - 180px); /* Уменьшено для компенсации увеличения place-col */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -394,7 +394,7 @@ input:focus {
   }
   
   .place-col {
-    width: 55px; /* Увеличено с 40px */
+    width: 50px; /* Увеличено с 40px */
     padding: 12px 5px 12px 8px; /* Добавлен отступ слева */
   }
   
