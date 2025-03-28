@@ -141,6 +141,7 @@ th {
 }
 
 /* Разделители между колонками */
+/* Разделители между колонками */
 th:not(:last-child)::after,
 .first-place td:not(:last-child)::after,
 .second-place td:not(:last-child)::after,
@@ -153,6 +154,18 @@ th:not(:last-child)::after,
   width: 1px;
   height: 60%;
   background: rgba(255, 255, 255, 0.3);
+}
+
+/* Разделители для остальных строк */
+tr:not(.first-place):not(.second-place):not(.third-place) td:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 60%;
+  background: rgba(106, 17, 203, 0.1); /* Новый цвет для разделителей */
 }
 
 td {
