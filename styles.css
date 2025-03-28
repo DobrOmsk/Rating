@@ -38,6 +38,34 @@ body::before {
   pointer-events: none;
 }
 
+/* Параллакс эффект */
+.table-container {
+  transition: transform 0.05s ease-out;
+  will-change: transform;
+}
+
+/* Звёздный фон */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(to bottom, rgba(2, 62, 138, 0.3) 0%, rgba(0, 39, 89, 0.7) 100%),
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200"><g fill="%23ffffff" opacity="0.8"><circle cx="200" cy="150" r="2.5"/><circle cx="800" cy="350" r="1.5"/><circle cx="400" cy="700" r="2"/><circle cx="1000" cy="200" r="3"/><circle cx="150" cy="900" r="2.5"/><circle cx="700" cy="600" r="1.5"/><circle cx="300" cy="300" r="2"/><circle cx="900" cy="800" r="3"/><circle cx="500" cy="450" r="2.5"/><circle cx="1100" cy="1000" r="1.5"/></g></svg>'),
+    #001a3d;
+  z-index: -2;
+  animation: gradientScroll 20s ease infinite;
+}
+
+@keyframes gradientScroll {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 0%; }
+}
+
 /* Анимация мерцания звезд */
 @keyframes twinkle {
   0%, 100% { opacity: 0.5; }
