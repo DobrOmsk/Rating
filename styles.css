@@ -343,24 +343,30 @@ input:focus {
 }
 
 /* Стили для текста "Как формируется рейтинг?" */
+.header p {
+  margin: 1rem 0 0;
+  font-size: 1.1rem;
+  max-width: 80%;
+  position: relative;
+  font-weight: 400;
+  display: inline; /* Добавляем это свойство */
+}
+
 .rating-info-trigger {
-  color: #fff; /* Белый цвет по умолчанию */
+  color: #fff; /* Белый цвет вместо золотого */
   text-decoration: underline;
   text-decoration-style: dotted;
   cursor: pointer;
-  margin-left: 0; /* Убрали отступ слева */
-  transition: color 0.3s ease; /* Анимируем только цвет */
+  margin-left: 0; /* Убираем отступ слева */
+  transition: all 0.3s ease;
   font-weight: 500;
-  background-color: transparent; /* Прозрачный фон */
-  padding: 0; /* Убираем внутренние отступы */
-  border: none; /* Убираем границы если есть */
-  font-family: inherit; /* Наследуем шрифт */
-  font-size: inherit; /* Наследуем размер шрифта */
+  padding: 2px 4px; /* Небольшой внутренний отступ для лучшего взаимодействия */
 }
 
 .rating-info-trigger:hover {
-  color: #6A11CB; /* Фиолетовый цвет при наведении */
-  text-decoration-color: #6A11CB; /* Цвет подчеркивания */
+  color: #6A11CB; /* Фиолетовый при наведении */
+  background-color: rgba(255, 255, 255, 0.2); /* Легкий фон при наведении */
+  border-radius: 3px;
 }
 
 /* Стили для модального окна */
