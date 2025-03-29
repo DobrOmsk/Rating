@@ -164,7 +164,7 @@ tr:not(.first-place):not(.second-place):not(.third-place) td:not(:last-child)::a
   transform: translateY(-50%);
   width: 1px;
   height: 60%;
-  background: #6a11cb; /* Новый цвет для разделителей */
+  background: #4843E4; /* Новый цвет для разделителей */
 }
 
 /* Линия-разделитель между заголовком и данными таблицы */
@@ -344,17 +344,17 @@ input:focus {
 
 /* Стили для текста "Как формируется рейтинг?" */
 .rating-info-trigger {
-  color: #ffeb3b;
+  color: #fff;
   text-decoration: underline;
   text-decoration-style: dotted;
   cursor: pointer;
-  margin-left: 8px;
+  margin-left: 0px;
   transition: all 0.3s ease;
   font-weight: 500;
 }
 
 .rating-info-trigger:hover {
-  color: #fff;
+  color: #6A11CB;
   text-decoration: underline;
 }
 
