@@ -29,16 +29,51 @@
       </p>
     </header>
 
-    <!-- Основное содержимое -->
     <main>
-      <!-- ... остальное содержимое без изменений ... -->
+      <div class="controls">
+        <input v-model="searchQuery" placeholder="Поиск по имени..." type="search">
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th class="place-col">Место</th>
+              <th class="name-col"><span>ФИО</span></th>
+              <th class="events-col"><span>Добрые дела</span></th>
+              <th class="points-col">Баллы</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-if="volunteers.length === 0">
+              <td colspan="4" class="loading">Загрузка данных...</td>
+            </tr>
+            <tr v-else v-for="volunteer in visibleVolunteers" :key="volunteer.name"
+                :class="{
+                  'first-place': volunteer.place === 1,
+                  'second-place': volunteer.place === 2,
+                  'third-place': volunteer.place === 3
+                }">
+              <td class="place-col">{{ volunteer.place }}</td>
+              <td class="name-col">{{ volunteer.name }}</td>
+              <td class="events-col">{{ volunteer.events }}</td>
+              <td class="points-col">{{ volunteer.points.toLocaleString() }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="show-more-container" v-if="hasMoreToShow">
+        <button class="show-more-btn" @click="showMore">Показать еще</button>
+      </div>
     </main>
 
-    <!-- Блок с контактами -->
     <footer class="contacts-footer">
-      <!-- ... содержимое футера без изменений ... -->
+      <h3>Ресурсный центр развития добровольчества Омской области</h3>
+      <p>Адрес: г. Омск, ул. Авангардная, 8, каб.14</p>
+      <p>Email: <a href="mailto:dobro617720@gmail.com">dobro617720@gmail.com</a></p>
+      <p>Канал с вакансиями: <a href="http://t.me/volunteer_omsk55" target="_blank">http://t.me/volunteer_omsk55</a></p>
     </footer>
-
     <!-- Модальное окно -->
     <div v-if="showRatingInfo" class="modal-overlay" @click.self="showRatingInfo = false">
       <div class="modal-content">
