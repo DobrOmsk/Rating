@@ -352,22 +352,25 @@ input:focus {
   display: inline; /* Добавляем это свойство */
 }
 
-.rating-info-trigger {
-  color: #fff; /* Белый цвет вместо золотого */
+/* Стиль для кликабельного текста в заголовке (открывает модальное окно) */
+.header p .rating-info-trigger {
+  display: block; /* Перенос на новую строку */
+  color: #fff; /* Белый цвет */
   text-decoration: underline;
   text-decoration-style: dotted;
   cursor: pointer;
-  margin-left: 0; /* Убираем отступ слева */
-  transition: all 0.3s ease;
+  margin: 8px 0 0 0; /* Отступ только сверху */
+  padding: 0;
+  transition: color 0.3s ease;
   font-weight: 500;
-  padding: 2px 4px; /* Небольшой внутренний отступ для лучшего взаимодействия */
+  width: fit-content; /* Ширина по содержимому */
 }
 
-.rating-info-trigger:hover {
+.header p .rating-info-trigger:hover {
   color: #6A11CB; /* Фиолетовый при наведении */
-  background-color: rgba(255, 255, 255, 0.2); /* Легкий фон при наведении */
-  border-radius: 3px;
+  text-decoration-color: #6A11CB;
 }
+
 
 /* Стили для модального окна */
 .modal-overlay {
@@ -404,9 +407,11 @@ input:focus {
 }
 
 .modal-content h3 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  color: #6a11cb;
+  text-align: left; /* Выравнивание по левому краю */
+  color: #333; /* Темный цвет (как было) */
+  margin: 0 0 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .modal-note {
