@@ -686,11 +686,11 @@ body {
 }
 
 .rating-info-trigger:hover {
-  color: #6A11CB;
+  color: #d3b1f8;
 }
 
 .rating-info-trigger:active {
-  color: #333;
+  color: #d3b1f8;
 }
 
 /* Основной контент */
