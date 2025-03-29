@@ -367,8 +367,8 @@ input:focus {
 }
 
 .header p .rating-info-trigger:hover {
-  color: #4672F3; /* Фиолетовый при наведении */
-  text-decoration-color: #4672F3;
+  color: #333; /* Фиолетовый при наведении */
+  text-decoration-color: #333;
 }
 
 
