@@ -344,18 +344,23 @@ input:focus {
 
 /* Стили для текста "Как формируется рейтинг?" */
 .rating-info-trigger {
-  color: #fff;
+  color: #fff; /* Белый цвет по умолчанию */
   text-decoration: underline;
   text-decoration-style: dotted;
   cursor: pointer;
-  margin-left: 0px;
-  transition: all 0.3s ease;
+  margin-left: 0; /* Убрали отступ слева */
+  transition: color 0.3s ease; /* Анимируем только цвет */
   font-weight: 500;
+  background-color: transparent; /* Прозрачный фон */
+  padding: 0; /* Убираем внутренние отступы */
+  border: none; /* Убираем границы если есть */
+  font-family: inherit; /* Наследуем шрифт */
+  font-size: inherit; /* Наследуем размер шрифта */
 }
 
 .rating-info-trigger:hover {
-  color: #6A11CB;
-  text-decoration: underline;
+  color: #6A11CB; /* Фиолетовый цвет при наведении */
+  text-decoration-color: #6A11CB; /* Цвет подчеркивания */
 }
 
 /* Стили для модального окна */
@@ -370,7 +375,7 @@ input:focus {
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  animation: fadeIn 0.3s;
+  /* Убрали анимацию для оверлея */
 }
 
 .modal-content {
@@ -381,6 +386,19 @@ input:focus {
   width: 90%;
   position: relative;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  /* Добавляем анимацию только для контента */
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .modal-close {
