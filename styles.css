@@ -448,21 +448,6 @@ input:focus {
   color: #333;
 }
 
-.rating-info-trigger {
-  color: #ffeb3b;
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  cursor: pointer;
-  margin-left: 8px;
-  transition: all 0.3s;
-  font-weight: 500;
-}
-
-.rating-info-trigger:hover {
-  color: #fff;
-  text-decoration: underline;
-}
-
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
