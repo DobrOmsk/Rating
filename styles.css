@@ -140,8 +140,7 @@ th {
   border: none;
 }
 
-/* Разделители между колонками */
-/* Разделители между колонками */
+/* Разделители между колонками первые места */
 th:not(:last-child)::after,
 .first-place td:not(:last-child)::after,
 .second-place td:not(:last-child)::after,
@@ -165,7 +164,7 @@ tr:not(.first-place):not(.second-place):not(.third-place) td:not(:last-child)::a
   transform: translateY(-50%);
   width: 1px;
   height: 60%;
-  background: rgba(106, 17, 203, 0.1); /* Новый цвет для разделителей */
+  background: #6a11cb; /* Новый цвет для разделителей */
 }
 
 /* Линия-разделитель между заголовком и данными таблицы */
