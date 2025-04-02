@@ -98,7 +98,7 @@ body {
 .rating-info-trigger {
   display: inline-block;
   color: #fff;
-  font-size: 1rem !important; /* Фиксированный размер, как у основного текста */
+  font-size: 1rem; /* Фиксированный размер, как у основного текста */
   text-decoration: underline;
   text-decoration-style: dotted;
   cursor: pointer;
@@ -575,6 +575,22 @@ input:focus {
   
   .modal-content h3 {
     font-size: 1.3rem;
+  }
+}
+
+/* Стили при просмотре "версии для ПК" на мобильном */
+@media (min-width: 769px) {
+  /* Принудительно увеличиваем размеры для мобильных в PC-режиме */
+  .rating-info-trigger {
+    font-size: 1.2rem !important;
+  }
+  
+  .header {
+    padding-left: 6rem !important; /* Сохраняем большой отступ */
+  }
+  
+  .header p {
+    text-align: justify !important; /* Принудительное выравнивание */
   }
 }
 
