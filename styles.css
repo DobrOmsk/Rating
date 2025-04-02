@@ -467,7 +467,7 @@ input:focus {
   }
   
   .header h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding-left: 2.5rem; /* Добавляем дополнительный отступ слева */
     margin-left: -2.5rem; /* Компенсируем общий padding */
   }
@@ -476,9 +476,9 @@ input:focus {
 
   .header p,
   .rating-info-trigger {
-    padding-left: 1.0rem; /* Такой же как правый отступ */
-    margin-left: -1.0rem; /* Компенсируем общий padding */
-    width: calc(100% - 2rem); /* Вычитаем оба отступа */
+    padding-left: 0.5rem; /* Такой же как правый отступ */
+    margin-left: -0.5rem; /* Компенсируем общий padding */
+    width: calc(100% - 1rem); /* Вычитаем оба отступа */
     word-break: normal;
   }
   
