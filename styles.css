@@ -556,7 +556,7 @@ input:focus {
   .logo {
     width: 80px;
     top: -10px;
-    left: -10px;
+    left: 1px;
   }
   
   .place-col {
