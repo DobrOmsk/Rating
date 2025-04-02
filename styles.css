@@ -39,7 +39,7 @@ body {
 .header {
   background: linear-gradient(135deg, #540475 0%, #9433BA 100%);
   color: white;
-  padding: 2.5rem 2.5rem 2.5rem 6rem; /* Сохраняем левый отступ 6rem */
+  padding: 2.5rem 2.5rem 2.5rem 6rem;
   margin: 2rem auto;
   border-radius: 25px;
   box-shadow: 0 10px 30px rgba(106, 17, 203, 0.3);
@@ -77,7 +77,7 @@ body {
 .header h1 {
   margin: 0;
   font-size: 2.5rem;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2));
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   position: relative;
   font-weight: 600;
 }
@@ -85,27 +85,27 @@ body {
 .header p {
   margin: 1rem 0 0;
   font-size: 1rem;
-  width: calc(100% - 2.5rem); /* Учитываем правый padding */
+  width: calc(100% - 2.5rem);
   font-weight: 400;
-  text-align: justify; /* Выравнивание по ширине */
-  hyphens: none; /* Запрещаем перенос слов */
-  word-break: keep-all; /* Запрещаем разрыв слов */
+  text-align: justify;
+  hyphens: none;
+  word-break: keep-all;
   padding: 0;
-  text-align-last: left; /* Последняя строка выравнивается по левому краю */
+  text-align-last: left;
 }
 
 /* Стили для текста "Как формируется рейтинг?" */
 .rating-info-trigger {
   display: inline-block;
   color: #fff;
-  font-size: 1rem; /* Фиксированный размер, как у основного текста */
+  font-size: 1rem;
   text-decoration: underline;
   text-decoration-style: dotted;
   cursor: pointer;
   margin-top: 8px;
   transition: color 0.3s ease;
   font-weight: 500;
-  white-space: nowrap; /* Запрещаем перенос */
+  white-space: nowrap;
 }
 
 .rating-info-trigger:hover {
@@ -137,7 +137,7 @@ table {
   background: white;
   border-radius: 25px;
   overflow: hidden;
-  box-shadow: 0 15px 35px rgba(106, 17, 203, 0.1));
+  box-shadow: 0 15px 35px rgba(106, 17, 203, 0.1);
   position: relative;
   table-layout: fixed;
 }
@@ -360,7 +360,7 @@ input:focus {
 }
 
 .contacts-footer a {
-  color: #540475
+  color: #540475;
   text-decoration: none;
 }
 
@@ -451,48 +451,37 @@ input:focus {
   to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
-  100% { transform: translateY(0); }
-}
-
 /* Адаптивность */
-
 @media (max-width: 768px) {
   .header {
-    padding: 1rem; /* Меньший левый отступ на мобильных */
+    padding: 1rem 0.8rem !important;
     margin: 1rem auto;
-    text-align: left;
   }
   
   .header h1 {
     font-size: 2rem;
-    padding-left: 2.5rem; /* Добавляем дополнительный отступ слева */
-    margin-left: -2.5rem; /* Компенсируем общий padding */
+    padding-left: 1.2rem;
+    margin-left: 0;
   }
-  
-
 
   .header p,
   .rating-info-trigger {
-    padding-left: 0.5rem; /* Такой же как правый отступ */
-    margin-left: -0.5rem; /* Компенсируем общий padding */
-    width: calc(100% - 1rem); /* Вычитаем оба отступа */
+    padding-left: 0.8rem;
+    margin-left: 0;
+    width: calc(100% - 1.6rem);
     word-break: normal;
   }
   
-    /* Специально для кликабельного текста */
   .rating-info-trigger {
     white-space: normal;
-    font-size: 1rem;
-    display: block; /* Чтобы переносы работали */
+    margin-top: 0.5rem;
+    display: block;
   }
   
   .logo {
     width: 100px;
-    top: -20px;
-    left: -20px;
+    top: -15px;
+    left: -15px;
   }
   
   th, td {
@@ -549,13 +538,24 @@ input:focus {
 
 @media (max-width: 480px) {
   .header {
-    padding: 1.5rem 1.5rem 1.5rem 4.5rem;
+    padding: 0.8rem 0.6rem !important;
+  }
+  
+  .header h1 {
+    padding-left: 1rem;
+    font-size: 1.8rem;
+  }
+  
+  .header p,
+  .rating-info-trigger {
+    padding-left: 0.6rem;
+    width: calc(100% - 1.2rem);
   }
   
   .logo {
-    width: 90px;
+    width: 80px;
     top: -10px;
-    left: 5px;
+    left: -10px;
   }
   
   .place-col {
@@ -594,17 +594,16 @@ input:focus {
 
 /* Стили при просмотре "версии для ПК" на мобильном */
 @media (min-width: 769px) {
-  /* Принудительно увеличиваем размеры для мобильных в PC-режиме */
   .rating-info-trigger {
     font-size: 1.2rem;
   }
   
   .header {
-    padding-left: 6rem; /* Сохраняем большой отступ */
+    padding-left: 6rem;
   }
   
   .header p {
-    text-align: justify; /* Принудительное выравнивание */
+    text-align: justify;
   }
 }
 
@@ -612,7 +611,3 @@ input:focus {
 table {
   animation: fadeIn 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
-
-.header h1 {
-  animation: float 4s ease-in-out infinite;
-  } 
