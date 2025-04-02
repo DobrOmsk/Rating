@@ -190,7 +190,7 @@ tr:not(.first-place):not(.second-place):not(.third-place) td:not(:last-child)::a
   transform: translateY(-50%);
   width: 1px;
   height: 60%;
-  background: rgba(84, 4, 117? 0.1);
+  background: rgba(84, 4, 117, 0.1);
 }
 
 /* Линия-разделитель между заголовком и данными таблицы */
@@ -461,7 +461,7 @@ input:focus {
 
 @media (max-width: 768px) {
   .header {
-    padding: 1.5rem; /* Меньший левый отступ на мобильных */
+    padding: 1rem; /* Меньший левый отступ на мобильных */
     margin: 1rem auto;
     text-align: left;
   }
@@ -476,8 +476,8 @@ input:focus {
 
   .header p,
   .rating-info-trigger {
-    padding-left: 1.5rem; /* Такой же как правый отступ */
-    margin-left: -1.5rem; /* Компенсируем общий padding */
+    padding-left: 1.0rem; /* Такой же как правый отступ */
+    margin-left: -1.0rem; /* Компенсируем общий padding */
     width: calc(100% - 3rem); /* Вычитаем оба отступа */
     word-break: normal;
   }
