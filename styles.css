@@ -461,18 +461,32 @@ input:focus {
 
 @media (max-width: 768px) {
   .header {
-    padding: 1.5rem 1.5rem 1.5rem 4rem; /* Меньший левый отступ на мобильных */
+    padding: 1.5rem; /* Меньший левый отступ на мобильных */
     margin: 1rem auto;
     text-align: left;
   }
   
   .header h1 {
     font-size: 1.8rem;
+    padding-left: 1.5rem; /* Добавляем дополнительный отступ слева */
+    margin-left: -1.5rem; /* Компенсируем общий padding */
   }
   
-  .header p {
-    width: 100%; /* Полная ширина */
+
+
+  .header p,
+  .rating-info-trigger {
+    padding-left: 1.5rem; /* Такой же как правый отступ */
+    margin-left: -1.5rem; /* Компенсируем общий padding */
+    width: calc(100% - 3rem); /* Вычитаем оба отступа */
     word-break: normal;
+  }
+  
+    /* Специально для кликабельного текста */
+  .rating-info-trigger {
+    white-space: normal;
+    font-size: 1rem;
+    display: block; /* Чтобы переносы работали */
   }
   
   .logo {
