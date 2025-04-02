@@ -596,15 +596,15 @@ input:focus {
 @media (min-width: 769px) {
   /* Принудительно увеличиваем размеры для мобильных в PC-режиме */
   .rating-info-trigger {
-    font-size: 1.2rem !important;
+    font-size: 1.2rem;
   }
   
   .header {
-    padding-left: 6rem !important; /* Сохраняем большой отступ */
+    padding-left: 6rem; /* Сохраняем большой отступ */
   }
   
   .header p {
-    text-align: justify !important; /* Принудительное выравнивание */
+    text-align: justify; /* Принудительное выравнивание */
   }
 }
 
