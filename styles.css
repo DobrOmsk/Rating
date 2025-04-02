@@ -39,7 +39,7 @@ body {
 .header {
   background: linear-gradient(135deg, #540475 0%, #9433BA 100%);
   color: white;
-  padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+  padding: 2.5rem 2.5rem 2.5rem 6rem;
   margin: 2rem auto;
   border-radius: 25px;
   box-shadow: 0 10px 30px rgba(106, 17, 203, 0.3));
