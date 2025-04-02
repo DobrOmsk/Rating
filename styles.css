@@ -89,6 +89,7 @@ body {
   position: relative;
   font-weight: 400;
   display: block;
+  align:justify;
 }
 
 /* Стили для текста "Как формируется рейтинг?" */
