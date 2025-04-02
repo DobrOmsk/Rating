@@ -297,19 +297,19 @@ tr:hover td {
 input {
   padding: 15px 25px;
   border-radius: 50px;
-  border: 2px solid #6a11cb;
+  border: 2px solid #540475;
   width: 350px;
   font-size: 1rem;
   outline: none;
   transition: all 0.3s;
   background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 5px 15px rgba(106, 17, 203, 0.1));
+  box-shadow: 0 5px 15px rgba(84, 4, 117, 0.1));
   font-family: 'Roboto Flex', sans-serif;
 }
 
 input:focus {
-  border-color: #2575fc;
-  box-shadow: 0 0 0 4px rgba(37, 117, 252, 0.15));
+  border-color: #C484DD;
+  box-shadow: 0 0 0 4px rgba(196, 132, 221, 0.15));
   transform: translateY(-2px);
 }
 
