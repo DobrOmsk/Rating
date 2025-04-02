@@ -1,24 +1,24 @@
 [
   {
-    "place":238,
+    "place":241,
     "name":"Абелькенова Лиана Ерлановна",
     "events":1,
     "points":21
   },
   {
-    "place":50,
+    "place":52,
     "name":"Абраменко Ангелина Григорьевна",
     "events":2,
     "points":100
   },
   {
-    "place":86,
+    "place":87,
     "name":"Авдащенко Дарья Олеговна",
     "events":3,
     "points":69
   },
   {
-    "place":306,
+    "place":307,
     "name":"Агафонов Илья Игоревич",
     "events":1,
     "points":13
@@ -30,31 +30,31 @@
     "points":18
   },
   {
-    "place":141,
+    "place":144,
     "name":"Айтышев Амир Берикович",
     "events":1,
     "points":37
   },
   {
-    "place":185,
+    "place":187,
     "name":"Аксёнова Анастасия Борисовна",
     "events":1,
     "points":29
   },
   {
-    "place":169,
+    "place":170,
     "name":"Анастасия Вайц Валерьевна",
     "events":1,
     "points":30
   },
   {
-    "place":198,
+    "place":199,
     "name":"Аникеева Мария Алексеевна",
     "events":1,
     "points":25
   },
   {
-    "place":275,
+    "place":276,
     "name":"Апресов Матвей Денисович",
     "events":1,
     "points":16
@@ -66,7 +66,7 @@
     "points":112
   },
   {
-    "place":198,
+    "place":199,
     "name":"Архангельская Эльвира Кирилловна",
     "events":1,
     "points":25
@@ -84,31 +84,31 @@
     "points":127
   },
   {
-    "place":152,
+    "place":154,
     "name":"Афонькова Юлия Владимировна",
     "events":1,
     "points":36
   },
   {
-    "place":198,
+    "place":199,
     "name":"Бабикова София Алексеевна",
     "events":1,
     "points":25
   },
   {
-    "place":198,
+    "place":199,
     "name":"Бабушкин Илья Денисович",
     "events":1,
     "points":25
   },
   {
-    "place":57,
+    "place":45,
     "name":"Баранова Софья Максимовна",
     "events":2,
-    "points":94
+    "points":105
   },
   {
-    "place":86,
+    "place":87,
     "name":"Барахоев Микаил Магомедович",
     "events":1,
     "points":69
@@ -120,7 +120,7 @@
     "points":73
   },
   {
-    "place":117,
+    "place":118,
     "name":"Бегжанов Никита Николаевич",
     "events":4,
     "points":52
@@ -132,7 +132,7 @@
     "points":31
   },
   {
-    "place":197,
+    "place":198,
     "name":"Белицкий Михаил Андреевич",
     "events":1,
     "points":26
@@ -144,7 +144,7 @@
     "points":182
   },
   {
-    "place":108,
+    "place":110,
     "name":"Богомазова Арина Сергеевна",
     "events":3,
     "points":57
@@ -156,7 +156,7 @@
     "points":78
   },
   {
-    "place":243,
+    "place":245,
     "name":"Борисенко София Олеговна",
     "events":1,
     "points":20
@@ -168,25 +168,25 @@
     "points":18
   },
   {
-    "place":275,
+    "place":276,
     "name":"Вайцель Зоя Сергеевна",
     "events":1,
     "points":16
   },
   {
-    "place":290,
+    "place":291,
     "name":"Васильева Полина Владиславовна",
     "events":1,
     "points":15
   },
   {
-    "place":198,
+    "place":199,
     "name":"Верухина Татьяна Алексеевна",
     "events":1,
     "points":25
   },
   {
-    "place":198,
+    "place":199,
     "name":"Веселова Дарья Дмитриевна",
     "events":1,
     "points":25
@@ -198,25 +198,25 @@
     "points":155
   },
   {
-    "place":4,
+    "place":3,
     "name":"Волков Виктор Евгеньевич",
     "events":12,
-    "points":317
+    "points":326
   },
   {
-    "place":198,
+    "place":199,
     "name":"Волкова Маргарита Евгеньевна",
     "events":1,
     "points":25
   },
   {
-    "place":111,
+    "place":113,
     "name":"Волошина Маргарита Васильевна",
     "events":1,
     "points":55
   },
   {
-    "place":169,
+    "place":170,
     "name":"Вольф Карина Анатольевна",
     "events":1,
     "points":30
@@ -228,19 +228,19 @@
     "points":144
   },
   {
-    "place":198,
+    "place":199,
     "name":"Галкина Татьяна Денисовна",
     "events":1,
     "points":25
   },
   {
-    "place":186,
+    "place":188,
     "name":"Ганкевич Алёна Александровна",
     "events":1,
     "points":28
   },
   {
-    "place":169,
+    "place":170,
     "name":"Гейбель Марьяна Сергеевна",
     "events":1,
     "points":30
@@ -252,16 +252,16 @@
     "points":76
   },
   {
-    "place":44,
+    "place":39,
     "name":"Горбачева Александра Максимовна",
     "events":3,
-    "points":105
+    "points":109
   },
   {
-    "place":161,
+    "place":140,
     "name":"Гордеева Виктория Дмитриевна",
     "events":1,
-    "points":32
+    "points":39
   },
   {
     "place":29,
@@ -270,181 +270,181 @@
     "points":136
   },
   {
-    "place":141,
+    "place":144,
     "name":"Горст Виолетта Витальевна",
     "events":1,
     "points":37
   },
   {
-    "place":76,
+    "place":78,
     "name":"Гречко Вадим Сергеевич",
     "events":1,
     "points":70
   },
   {
-    "place":231,
+    "place":234,
     "name":"Грик София Михайловна",
     "events":1,
     "points":23
   },
   {
-    "place":94,
+    "place":96,
     "name":"Давыдович Анастасия Сергеевна",
     "events":2,
     "points":65
   },
   {
-    "place":141,
+    "place":144,
     "name":"Даньшина Елена Игоревна",
     "events":2,
     "points":37
   },
   {
-    "place":275,
+    "place":276,
     "name":"Девина Александра Вячеславовна",
     "events":1,
     "points":16
   },
   {
-    "place":169,
+    "place":170,
     "name":"Дедов Матвей Иванович",
     "events":1,
     "points":30
   },
   {
-    "place":39,
+    "place":40,
     "name":"Дедун Алëна Олеговна",
     "events":1,
     "points":108
   },
   {
-    "place":155,
+    "place":132,
     "name":"Деева Анастасия Евгеньевна",
     "events":2,
-    "points":34
+    "points":43
   },
   {
-    "place":160,
+    "place":161,
     "name":"Дементьева Полина Юрьевна",
     "events":2,
     "points":33
   },
   {
-    "place":14,
+    "place":12,
     "name":"Денюшина Виктория Алексеевна",
     "events":5,
-    "points":187
+    "points":192
   },
   {
-    "place":141,
+    "place":144,
     "name":"Дмитриева Алиса Сергеевна",
     "events":1,
     "points":37
   },
   {
-    "place":76,
+    "place":78,
     "name":"Долганов Николай Александрович",
     "events":1,
     "points":70
   },
   {
-    "place":76,
+    "place":78,
     "name":"Долганова Ольга Александровна",
     "events":1,
     "points":70
   },
   {
-    "place":243,
+    "place":245,
     "name":"Дрозд Анастасия Сергеевна",
     "events":1,
     "points":20
   },
   {
-    "place":46,
+    "place":47,
     "name":"Евлоева Арина Темуровна",
     "events":3,
     "points":104
   },
   {
-    "place":275,
+    "place":276,
     "name":"Егорова Вероника Александровна",
     "events":1,
     "points":16
   },
   {
-    "place":290,
+    "place":291,
     "name":"Екимовских Екатерина Сергеевна",
     "events":1,
     "points":15
   },
   {
-    "place":123,
+    "place":124,
     "name":"Елфимова Ангелина Сергеевна",
     "events":1,
     "points":46
   },
   {
-    "place":169,
+    "place":170,
     "name":"Жильников Евгений Александрович",
     "events":1,
     "points":30
   },
   {
-    "place":39,
+    "place":40,
     "name":"Заболотных Евгений Андреевич",
     "events":1,
     "points":108
   },
   {
-    "place":111,
+    "place":113,
     "name":"Заборовская Виктория Владиславовна",
     "events":2,
     "points":55
   },
   {
-    "place":109,
+    "place":111,
     "name":"Задорожный Максим Николаевич",
     "events":2,
     "points":56
   },
   {
-    "place":295,
+    "place":296,
     "name":"Зайкова Виктория Максимовна ",
     "events":1,
     "points":14
   },
   {
-    "place":275,
+    "place":276,
     "name":"Захаркина Елизавета Александровна",
     "events":1,
     "points":16
   },
   {
-    "place":55,
+    "place":52,
     "name":"Зеленцова Полина Сергеевна",
     "events":2,
-    "points":95
+    "points":100
   },
   {
-    "place":111,
+    "place":113,
     "name":"Землянских Варвара Сергеевна",
     "events":1,
     "points":55
   },
   {
-    "place":230,
+    "place":231,
     "name":"Зимина Ксения Павловна",
     "events":1,
     "points":24
   },
   {
-    "place":97,
+    "place":100,
     "name":"Зинченко Дарья Александровна",
     "events":2,
     "points":63
   },
   {
-    "place":123,
+    "place":124,
     "name":"Зубарева Софья Константиновна",
     "events":1,
     "points":46
@@ -456,25 +456,25 @@
     "points":178
   },
   {
-    "place":275,
+    "place":276,
     "name":"Иванова Анастасия Игоревна",
     "events":1,
     "points":16
   },
   {
-    "place":161,
+    "place":162,
     "name":"Иванова Елена Михайловна",
     "events":2,
     "points":32
   },
   {
-    "place":195,
+    "place":197,
     "name":"Иванова Софья Андреевна",
     "events":1,
     "points":27
   },
   {
-    "place":55,
+    "place":57,
     "name":"Ивашков Никита Александрович",
     "events":2,
     "points":95
@@ -486,13 +486,13 @@
     "points":31
   },
   {
-    "place":102,
+    "place":104,
     "name":"Игнатенко Екатерина Викторовна",
     "events":1,
     "points":60
   },
   {
-    "place":243,
+    "place":245,
     "name":"Идрисова Валентина Георгиевна",
     "events":1,
     "points":20
@@ -504,25 +504,25 @@
     "points":134
   },
   {
-    "place":243,
+    "place":245,
     "name":"Исматов Александр Тимурович",
     "events":1,
     "points":20
   },
   {
-    "place":198,
+    "place":199,
     "name":"Кабиева Алина ",
     "events":1,
     "points":25
   },
   {
-    "place":169,
+    "place":170,
     "name":"Какаев Денис Васильевич",
     "events":1,
     "points":30
   },
   {
-    "place":141,
+    "place":144,
     "name":"Калашникова Виктория",
     "events":1,
     "points":37
@@ -534,16 +534,16 @@
     "points":90
   },
   {
-    "place":295,
+    "place":263,
     "name":"Калиновская Софья Алексеевна",
     "events":1,
-    "points":14
+    "points":18
   },
   {
-    "place":243,
+    "place":231,
     "name":"Каретникова Анна Витальевна",
     "events":1,
-    "points":20
+    "points":24
   },
   {
     "place":18,
@@ -552,7 +552,7 @@
     "points":175
   },
   {
-    "place":231,
+    "place":234,
     "name":"Карпин Илья Дмитриевич",
     "events":1,
     "points":23
@@ -564,25 +564,25 @@
     "points":31
   },
   {
-    "place":198,
+    "place":199,
     "name":"Карсакова Ксения Сергеевна",
     "events":1,
     "points":25
   },
   {
-    "place":195,
+    "place":165,
     "name":"Кацук Алиса Сергеевна",
     "events":2,
-    "points":27
+    "points":31
   },
   {
-    "place":275,
+    "place":276,
     "name":"Кашкинов Максим Сергеевич",
     "events":1,
     "points":16
   },
   {
-    "place":198,
+    "place":199,
     "name":"Кизюн Софья Вячеславовна",
     "events":1,
     "points":25
@@ -594,49 +594,49 @@
     "points":18
   },
   {
-    "place":13,
+    "place":14,
     "name":"Киселёва Мария Сергеевна",
     "events":4,
     "points":188
   },
   {
-    "place":169,
+    "place":170,
     "name":"Кислицына Мария Сергеевна",
     "events":1,
     "points":30
   },
   {
-    "place":155,
+    "place":157,
     "name":"Клименко Валерий Николаевич",
     "events":1,
     "points":34
   },
   {
-    "place":76,
+    "place":78,
     "name":"Кобзарь Яна Евгеньевна",
     "events":2,
     "points":70
   },
   {
-    "place":198,
+    "place":199,
     "name":"Коваленко Ева Радомировна",
     "events":1,
     "points":25
   },
   {
-    "place":198,
+    "place":199,
     "name":"Коваленко Ульяна Александровна",
     "events":1,
     "points":25
   },
   {
-    "place":258,
+    "place":234,
     "name":"Ковальчук Вера Сергеевна",
     "events":1,
-    "points":19
+    "points":23
   },
   {
-    "place":258,
+    "place":259,
     "name":"Козина Валерия Андреевна",
     "events":1,
     "points":19
@@ -645,7 +645,7 @@
     "place":76,
     "name":"Козубенко Елизавета Евгеньевна",
     "events":3,
-    "points":70
+    "points":72
   },
   {
     "place":58,
@@ -654,91 +654,91 @@
     "points":93
   },
   {
-    "place":76,
+    "place":78,
     "name":"Конышев Максим Константинович",
     "events":1,
     "points":70
   },
   {
-    "place":295,
+    "place":296,
     "name":"Копцева Елена Александровна",
     "events":1,
     "points":14
   },
   {
-    "place":141,
+    "place":144,
     "name":"Корененко Полина Дмитриевна",
     "events":1,
     "points":37
   },
   {
-    "place":43,
+    "place":44,
     "name":"Коржаков Матвей Александрович",
     "events":4,
     "points":106
   },
   {
-    "place":198,
+    "place":199,
     "name":"Коркин Макар Анатольевич",
     "events":1,
     "points":25
   },
   {
-    "place":132,
+    "place":134,
     "name":"Королев Ярослав Андреевич",
     "events":2,
     "points":42
   },
   {
-    "place":155,
+    "place":157,
     "name":"Коршунова Полина Сергеевна",
     "events":1,
     "points":34
   },
   {
-    "place":75,
+    "place":76,
     "name":"Косенкова Алиса Сергеевна",
     "events":3,
     "points":72
   },
   {
-    "place":290,
+    "place":291,
     "name":"Костенко Ирина Александровна",
     "events":1,
     "points":15
   },
   {
-    "place":99,
+    "place":103,
     "name":"Кошукова Оляна Андреевна",
     "events":2,
     "points":62
   },
   {
-    "place":141,
+    "place":144,
     "name":"Красенкова Ольга Викторовна",
     "events":1,
     "points":37
   },
   {
-    "place":275,
+    "place":276,
     "name":"Краснова Арина Владимировна",
     "events":1,
     "points":16
   },
   {
-    "place":99,
+    "place":92,
     "name":"Куделя Полина Ильинична",
     "events":1,
-    "points":62
+    "points":66
   },
   {
-    "place":136,
+    "place":138,
     "name":"Кужелев Глеб Вячеславович",
     "events":1,
     "points":40
   },
   {
-    "place":141,
+    "place":144,
     "name":"Кузеванов Александр Андреевич",
     "events":1,
     "points":37
@@ -756,13 +756,13 @@
     "points":157
   },
   {
-    "place":275,
+    "place":276,
     "name":"Курбацкая Ирина Сергеевна",
     "events":1,
     "points":16
   },
   {
-    "place":90,
+    "place":92,
     "name":"Курьята Олеся Евгеньевна",
     "events":2,
     "points":66
@@ -780,25 +780,25 @@
     "points":151
   },
   {
-    "place":231,
+    "place":234,
     "name":"Кучерова Софья Ивановна",
     "events":1,
     "points":23
   },
   {
-    "place":295,
+    "place":296,
     "name":"Кучумова Варвара Ивановна",
     "events":1,
     "points":14
   },
   {
-    "place":198,
+    "place":199,
     "name":"Лабузов Матвей Сергеевич",
     "events":1,
     "points":25
   },
   {
-    "place":115,
+    "place":116,
     "name":"Лазарева Елизавета Кирилловна",
     "events":2,
     "points":53
@@ -810,85 +810,85 @@
     "points":18
   },
   {
-    "place":117,
+    "place":100,
     "name":"Лапухина Диана Сергеевна",
     "events":1,
-    "points":52
+    "points":63
   },
   {
-    "place":186,
+    "place":188,
     "name":"Лаухтина Дарья Павловна",
     "events":1,
     "points":28
   },
   {
-    "place":295,
+    "place":296,
     "name":"Ленинг Екатерина Александровна",
     "events":1,
     "points":14
   },
   {
-    "place":132,
+    "place":134,
     "name":"Леус Елена Борисовна",
     "events":2,
     "points":42
   },
   {
-    "place":243,
+    "place":245,
     "name":"Лещенко Василиса Михайловна",
     "events":1,
     "points":20
   },
   {
-    "place":90,
+    "place":92,
     "name":"Лизунова Софья Вячеславовна",
     "events":1,
     "points":66
   },
   {
-    "place":76,
+    "place":78,
     "name":"Липов Андрей Сергеевич",
     "events":1,
     "points":70
   },
   {
-    "place":169,
+    "place":170,
     "name":"Лихачева Александра Сергеевна",
     "events":1,
     "points":30
   },
   {
-    "place":52,
+    "place":55,
     "name":"Логинова Эвелина Олеговна",
     "events":4,
     "points":98
   },
   {
-    "place":169,
+    "place":170,
     "name":"Лопарева Ирина Константиновна",
     "events":1,
     "points":30
   },
   {
-    "place":169,
+    "place":170,
     "name":"Лопарева Светлана Михайловна",
     "events":1,
     "points":30
   },
   {
-    "place":86,
+    "place":87,
     "name":"Лось Анастасия Викторовна",
     "events":2,
     "points":69
   },
   {
-    "place":258,
+    "place":259,
     "name":"Лузанова Виктория Алексеевна",
     "events":1,
     "points":19
   },
   {
-    "place":61,
+    "place":62,
     "name":"Лупонос Елизавета Дмитриевна",
     "events":3,
     "points":86
@@ -906,19 +906,19 @@
     "points":224
   },
   {
-    "place":117,
+    "place":118,
     "name":"Ляхов Александр Александрович",
     "events":2,
     "points":52
   },
   {
-    "place":231,
+    "place":234,
     "name":"Макарова Мария Сергеевна",
     "events":1,
     "points":23
   },
   {
-    "place":130,
+    "place":131,
     "name":"Малкова София Газизовна",
     "events":2,
     "points":44
@@ -930,13 +930,13 @@
     "points":18
   },
   {
-    "place":295,
+    "place":296,
     "name":"Марий Ольга Александровна",
     "events":1,
     "points":14
   },
   {
-    "place":169,
+    "place":170,
     "name":"Марочкина Кристина Дмитриевна",
     "events":1,
     "points":30
@@ -948,43 +948,43 @@
     "points":74
   },
   {
-    "place":94,
+    "place":96,
     "name":"Марус Ева Максимовна",
     "events":2,
     "points":65
   },
   {
-    "place":237,
+    "place":240,
     "name":"Марченко Елена Александровна",
     "events":1,
     "points":22
   },
   {
-    "place":243,
+    "place":245,
     "name":"Медведев Алексей Юрьевич",
     "events":1,
     "points":20
   },
   {
-    "place":115,
+    "place":116,
     "name":"Меньшенина Алёна Витальевна",
     "events":2,
     "points":53
   },
   {
-    "place":107,
+    "place":109,
     "name":"Меркулова Арина Владимировна",
     "events":1,
     "points":58
   },
   {
-    "place":186,
+    "place":188,
     "name":"Милентьева Вероника Сергеевна",
     "events":1,
     "points":28
   },
   {
-    "place":169,
+    "place":170,
     "name":"Минина Ксения Константиновна",
     "events":2,
     "points":30
@@ -1002,49 +1002,49 @@
     "points":110
   },
   {
-    "place":295,
+    "place":296,
     "name":"Моисеева Вика Максимовна",
     "events":1,
     "points":14
   },
   {
-    "place":135,
+    "place":137,
     "name":"Моисеева Мирослава Валерьевна",
     "events":2,
     "points":41
   },
   {
-    "place":47,
+    "place":49,
     "name":"Морозов Никита Евгеньевич",
     "events":3,
     "points":102
   },
   {
-    "place":243,
+    "place":245,
     "name":"Морозова Анна Романовна",
     "events":1,
     "points":20
   },
   {
-    "place":141,
+    "place":144,
     "name":"Морозова Софья Сергеевна",
     "events":1,
     "points":37
   },
   {
-    "place":44,
+    "place":45,
     "name":"Москавчук Станислав Владимирович",
     "events":2,
     "points":105
   },
   {
-    "place":52,
+    "place":55,
     "name":"Москаленко Семён Сергеевич",
     "events":1,
     "points":98
   },
   {
-    "place":136,
+    "place":138,
     "name":"Москаленко Тимур Яшарович",
     "events":2,
     "points":40
@@ -1056,7 +1056,7 @@
     "points":73
   },
   {
-    "place":109,
+    "place":111,
     "name":"Мухаметжанов Рефхат Васильевич",
     "events":3,
     "points":56
@@ -1068,7 +1068,7 @@
     "points":150
   },
   {
-    "place":306,
+    "place":307,
     "name":"Назарова Ольга Сергеевна",
     "events":1,
     "points":13
@@ -1080,7 +1080,7 @@
     "points":31
   },
   {
-    "place":198,
+    "place":199,
     "name":"Немова Екатерина Денисовна",
     "events":1,
     "points":25
@@ -1092,43 +1092,43 @@
     "points":49
   },
   {
-    "place":198,
+    "place":199,
     "name":"Непомнящих Василина Евгеньевна",
     "events":1,
     "points":25
   },
   {
-    "place":186,
+    "place":188,
     "name":"Нефедов Лев Константинович",
     "events":1,
     "points":28
   },
   {
-    "place":94,
+    "place":96,
     "name":"Низовцева Александра Александровна",
     "events":2,
     "points":65
   },
   {
-    "place":243,
+    "place":245,
     "name":"Никулина Ксения Александровна",
     "events":1,
     "points":20
   },
   {
-    "place":275,
+    "place":276,
     "name":"Носачева Ангелина Александровна",
     "events":1,
     "points":16
   },
   {
-    "place":243,
+    "place":245,
     "name":"Нурпеисов Дамир Булатович",
     "events":1,
     "points":20
   },
   {
-    "place":238,
+    "place":241,
     "name":"Огнев Даниил Владимирович",
     "events":1,
     "points":21
@@ -1140,13 +1140,13 @@
     "points":78
   },
   {
-    "place":243,
+    "place":245,
     "name":"Олянина София Михайловна",
     "events":1,
     "points":20
   },
   {
-    "place":141,
+    "place":144,
     "name":"Опенлендер Анна Андреевна",
     "events":1,
     "points":37
@@ -1158,13 +1158,13 @@
     "points":195
   },
   {
-    "place":138,
+    "place":141,
     "name":"Орлов Дмитрий Константинович",
     "events":1,
     "points":38
   },
   {
-    "place":258,
+    "place":259,
     "name":"Павленко Софья Сергеевна",
     "events":1,
     "points":19
@@ -1176,73 +1176,73 @@
     "points":18
   },
   {
-    "place":76,
+    "place":78,
     "name":"Паращук Сергей Алексеевич",
     "events":1,
     "points":70
   },
   {
-    "place":2,
+    "place":4,
     "name":"Парунов Иван Викторович",
     "events":2,
     "points":323
   },
   {
-    "place":47,
+    "place":49,
     "name":"Пашигорова Алиса Алексеевна",
     "events":3,
     "points":102
   },
   {
-    "place":54,
+    "place":48,
     "name":"Первушкина Елизавета Олеговна",
     "events":2,
-    "points":96
+    "points":103
   },
   {
-    "place":102,
+    "place":104,
     "name":"Перевальская Алена Викторовна",
     "events":1,
     "points":60
   },
   {
-    "place":102,
+    "place":104,
     "name":"Перевальская Мария Дмитриевна",
     "events":1,
     "points":60
   },
   {
-    "place":169,
+    "place":170,
     "name":"Перышкина Злата Дмитриевна",
     "events":1,
     "points":30
   },
   {
-    "place":64,
+    "place":60,
     "name":"Петров Михаил Александрович",
     "events":4,
-    "points":84
+    "points":88
   },
   {
-    "place":102,
+    "place":104,
     "name":"Петрова Полина Олеговна",
     "events":1,
     "points":60
   },
   {
-    "place":76,
+    "place":78,
     "name":"Пиндюк Лев Алексеевич",
     "events":1,
     "points":70
   },
   {
-    "place":138,
+    "place":141,
     "name":"Пичерских Любовь Ивановна",
     "events":2,
     "points":38
   },
   {
-    "place":186,
+    "place":188,
     "name":"Платонова София Александровна",
     "events":1,
     "points":28
@@ -1254,37 +1254,37 @@
     "points":170
   },
   {
-    "place":51,
+    "place":54,
     "name":"Подоляк Вероника Владимировна",
     "events":3,
     "points":99
   },
   {
-    "place":275,
+    "place":276,
     "name":"Попова Наталья Викторовна",
     "events":1,
     "points":16
   },
   {
-    "place":308,
+    "place":309,
     "name":"Попова Татьяна Андреевна",
     "events":1,
     "points":10
   },
   {
-    "place":169,
+    "place":170,
     "name":"Почёпина Виктория Сергеевна",
     "events":1,
     "points":30
   },
   {
-    "place":198,
+    "place":199,
     "name":"Притыко Дарья Денисовна",
     "events":1,
     "points":25
   },
   {
-    "place":12,
+    "place":13,
     "name":"Прохоренко Екатерина Игоревна",
     "events":2,
     "points":190
@@ -1308,19 +1308,19 @@
     "points":224
   },
   {
-    "place":161,
+    "place":162,
     "name":"Разгонов Владимир Викторович",
     "events":2,
     "points":32
   },
   {
-    "place":129,
+    "place":130,
     "name":"Разуева Ксения Дмитриевна",
     "events":2,
     "points":45
   },
   {
-    "place":275,
+    "place":276,
     "name":"Рамазонов Рузибек Лочин угли",
     "events":1,
     "points":16
@@ -1332,43 +1332,43 @@
     "points":111
   },
   {
-    "place":258,
+    "place":259,
     "name":"Ремизова Софья Александровна",
     "events":1,
     "points":19
   },
   {
-    "place":114,
+    "place":108,
     "name":"Решетникова Екатерина Сергеевна",
     "events":1,
-    "points":54
+    "points":59
   },
   {
-    "place":155,
+    "place":157,
     "name":"Рис Ульяна Ивановна",
     "events":1,
     "points":34
   },
   {
-    "place":295,
+    "place":296,
     "name":"Ровенская Вероника Павловна",
     "events":1,
     "points":14
   },
   {
-    "place":97,
+    "place":100,
     "name":"Романович Анна Дмитриевна",
     "events":2,
     "points":63
   },
   {
-    "place":238,
+    "place":231,
     "name":"Рубцова Вера Михайловна",
     "events":1,
-    "points":21
+    "points":24
   },
   {
-    "place":243,
+    "place":245,
     "name":"Ружелович Анна Николаевна",
     "events":1,
     "points":20
@@ -1380,13 +1380,13 @@
     "points":156
   },
   {
-    "place":90,
+    "place":92,
     "name":"Саламатова Елизавета Дмитриевна",
     "events":1,
     "points":66
   },
   {
-    "place":231,
+    "place":234,
     "name":"Самсонов Андрей Игоревич",
     "events":1,
     "points":23
@@ -1398,7 +1398,7 @@
     "points":81
   },
   {
-    "place":153,
+    "place":155,
     "name":"Саплин Кирилл Витальевич",
     "events":2,
     "points":35
@@ -1410,19 +1410,19 @@
     "points":204
   },
   {
-    "place":275,
+    "place":276,
     "name":"Сафронова Таисия Алексеевна",
     "events":1,
     "points":16
   },
   {
-    "place":198,
+    "place":199,
     "name":"Сергеева Алиса Романовна",
     "events":1,
     "points":25
   },
   {
-    "place":290,
+    "place":291,
     "name":"Сергеева Софья Васильевна",
     "events":1,
     "points":15
@@ -1434,106 +1434,106 @@
     "points":132
   },
   {
-    "place":295,
+    "place":296,
     "name":"Силичева Екатерина Александровна",
     "events":1,
     "points":14
   },
   {
-    "place":155,
+    "place":157,
     "name":"Симоненко Никита Сергеевич",
     "events":1,
     "points":34
   },
   {
-    "place":238,
+    "place":241,
     "name":"Ситникова Наталья Петровна",
     "events":1,
     "points":21
   },
   {
-    "place":123,
+    "place":124,
     "name":"Скаков Султан Нургалиевич",
     "events":1,
     "points":46
   },
   {
-    "place":141,
+    "place":132,
     "name":"Склюева Анастасия Александровна",
     "events":1,
-    "points":37
+    "points":43
   },
   {
-    "place":198,
+    "place":199,
     "name":"Скуратовой Виктории Маратовне",
     "events":1,
     "points":25
   },
   {
-    "place":63,
+    "place":64,
     "name":"Соколенко Виктория Викторовна",
     "events":3,
     "points":85
   },
   {
-    "place":39,
+    "place":40,
     "name":"Соколова Кристина Максимовна",
     "events":1,
     "points":108
   },
   {
-    "place":169,
+    "place":170,
     "name":"Сорокина Полина Владимировна",
     "events":1,
     "points":30
   },
   {
-    "place":186,
+    "place":188,
     "name":"Спирина Софья Владиславовна",
     "events":1,
     "points":28
   },
   {
-    "place":186,
+    "place":188,
     "name":"Стадник Денис Денисович",
     "events":1,
     "points":28
   },
   {
-    "place":274,
+    "place":275,
     "name":"Степанчук Виктория Сергеевна",
     "events":1,
     "points":17
   },
   {
-    "place":198,
+    "place":199,
     "name":"Стерликова Диана Дмитриевна",
     "events":1,
     "points":25
   },
   {
-    "place":243,
+    "place":245,
     "name":"Стецова Ксения Александровна",
     "events":1,
     "points":20
   },
   {
-    "place":198,
+    "place":199,
     "name":"Струк Мария Сергеевна",
     "events":1,
     "points":25
   },
   {
-    "place":198,
+    "place":199,
     "name":"Струц Анастасия Романовна",
     "events":1,
     "points":25
   },
   {
-    "place":231,
+    "place":170,
     "name":"Суворова Вероника Алексеевна",
-    "events":1,
-    "points":23
+    "events":2,
+    "points":30
   },
   {
     "place":35,
@@ -1542,49 +1542,49 @@
     "points":112
   },
   {
-    "place":238,
+    "place":241,
     "name":"Тазилова Виктория Владиславовна",
     "events":1,
     "points":21
   },
   {
-    "place":295,
+    "place":296,
     "name":"Тарасенко Дарья Евгеньевна",
     "events":1,
     "points":14
   },
   {
-    "place":132,
+    "place":134,
     "name":"Тарасова Мария Сергеевна",
     "events":2,
     "points":42
   },
   {
-    "place":198,
+    "place":199,
     "name":"Тастембекова Алмагуль Саматовна",
     "events":1,
     "points":25
   },
   {
-    "place":198,
+    "place":199,
     "name":"Тимошенко Виктория Олеговна",
     "events":1,
     "points":25
   },
   {
-    "place":198,
+    "place":199,
     "name":"Титаренко Елена Сергеевна",
     "events":1,
     "points":25
   },
   {
-    "place":243,
+    "place":245,
     "name":"Титушин Кирилл Евгеньевич",
     "events":1,
     "points":20
   },
   {
-    "place":198,
+    "place":199,
     "name":"Тихий-Тищенко Анжелика Алексеевна",
     "events":1,
     "points":25
@@ -1602,7 +1602,7 @@
     "points":155
   },
   {
-    "place":161,
+    "place":162,
     "name":"Ткачева Анастасия Павловна",
     "events":2,
     "points":32
@@ -1614,31 +1614,31 @@
     "points":18
   },
   {
-    "place":39,
+    "place":40,
     "name":"Токсубаева Ксения Викторовна",
     "events":1,
     "points":108
   },
   {
-    "place":123,
+    "place":124,
     "name":"Трошина Владислава Владимировна",
     "events":3,
     "points":46
   },
   {
-    "place":169,
+    "place":170,
     "name":"Трубочева Ангелина Сергеевна",
     "events":1,
     "points":30
   },
   {
-    "place":101,
+    "place":96,
     "name":"Тулубаев Андрей Викторович",
     "events":2,
-    "points":61
+    "points":65
   },
   {
-    "place":49,
+    "place":51,
     "name":"Турова София Николаевна",
     "events":2,
     "points":101
@@ -1650,31 +1650,31 @@
     "points":232
   },
   {
-    "place":198,
+    "place":199,
     "name":"Удовенко Дмитрий Владимирович",
     "events":1,
     "points":25
   },
   {
-    "place":198,
+    "place":199,
     "name":"Удовенко Мария Владимировна",
     "events":1,
     "points":25
   },
   {
-    "place":275,
+    "place":276,
     "name":"Уланов Никита Сергеевич",
     "events":1,
     "points":16
   },
   {
-    "place":138,
+    "place":141,
     "name":"Урмаева Светлана Сергеевна",
     "events":3,
     "points":38
   },
   {
-    "place":61,
+    "place":62,
     "name":"Фёдорова Екатерина Евгеньевна",
     "events":2,
     "points":86
@@ -1686,13 +1686,13 @@
     "points":206
   },
   {
-    "place":123,
+    "place":124,
     "name":"Фенькова Виктория Денисовна",
     "events":1,
     "points":46
   },
   {
-    "place":295,
+    "place":296,
     "name":"Фирстова Варвара Вадимовна",
     "events":1,
     "points":14
@@ -1710,7 +1710,7 @@
     "points":18
   },
   {
-    "place":198,
+    "place":199,
     "name":"Хорошавина Александра Андреевна",
     "events":1,
     "points":25
@@ -1722,34 +1722,34 @@
     "points":51
   },
   {
-    "place":186,
+    "place":188,
     "name":"Цуканова Каролина Александровна",
     "events":1,
     "points":28
   },
   {
-    "place":90,
+    "place":71,
     "name":"Цупикова Надежда Ивановна",
     "events":1,
-    "points":66
+    "points":73
   },
   {
     "place":1,
     "name":"Цыбукова Тамара Алексеевна",
     "events":4,
-    "points":401
+    "points":413
   },
   {
-    "place":275,
+    "place":276,
     "name":"Чердынцева Мария Олеговна",
     "events":1,
     "points":16
   },
   {
-    "place":3,
+    "place":2,
     "name":"Черкасов Константин Александрович",
     "events":3,
-    "points":322
+    "points":330
   },
   {
     "place":34,
@@ -1758,25 +1758,25 @@
     "points":115
   },
   {
-    "place":243,
+    "place":245,
     "name":"Чучалина Валерия Павловна",
     "events":1,
     "points":20
   },
   {
-    "place":102,
+    "place":90,
     "name":"Шатилова Полина Дмитриевна",
     "events":3,
-    "points":60
-  },
-  {
-    "place":131,
-    "name":"Шашкина Анна Александровна",
-    "events":1,
-    "points":43
+    "points":68
   },
   {
     "place":123,
+    "name":"Шашкина Анна Александровна",
+    "events":1,
+    "points":48
+  },
+  {
+    "place":124,
     "name":"Шевчук Даниил Юрьевич",
     "events":1,
     "points":46
@@ -1788,7 +1788,7 @@
     "points":18
   },
   {
-    "place":76,
+    "place":78,
     "name":"Шиндяпина Арина Денисовна",
     "events":1,
     "points":70
@@ -1800,7 +1800,7 @@
     "points":73
   },
   {
-    "place":153,
+    "place":155,
     "name":"Широкова Екатерина Игоревна",
     "events":2,
     "points":35
@@ -1812,19 +1812,19 @@
     "points":180
   },
   {
-    "place":198,
+    "place":199,
     "name":"Шишкина Людмила Владимировна",
     "events":1,
     "points":25
   },
   {
-    "place":290,
+    "place":291,
     "name":"Шмидт Ева Романовна",
     "events":1,
     "points":15
   },
   {
-    "place":186,
+    "place":188,
     "name":"Шумейко Валерия Александровна",
     "events":1,
     "points":28
@@ -1836,15 +1836,21 @@
     "points":150
   },
   {
-    "place":198,
+    "place":199,
     "name":"Яковлева Ксения Анатольевна",
     "events":1,
     "points":25
   },
   {
-    "place":89,
+    "place":90,
     "name":"Яндер Ярослав Дмитриевич",
     "events":2,
     "points":68
+  },
+  {
+    "place":296,
+    "name":"Булохова Регина Евгеньевна",
+    "events":1,
+    "points":14
   }
 ]
