@@ -460,7 +460,7 @@ input:focus {
   
   .header h1 {
     font-size: 2rem;
-    padding-left: 1.2rem;
+    padding-left: 3rem;
     margin-left: 0;
   }
 
@@ -481,7 +481,7 @@ input:focus {
   .logo {
     width: 100px;
     top: -15px;
-    left: -15px;
+    left: -1px;
   }
   
   th, td {
