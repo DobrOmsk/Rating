@@ -39,10 +39,10 @@ body {
 .header {
   background: linear-gradient(135deg, #540475 0%, #9433BA 100%);
   color: white;
-  padding: 2.5rem 2.5rem 2.5rem 6rem;
+  padding: 2.5rem;
   margin: 2rem auto;
   border-radius: 25px;
-  box-shadow: 0 10px 30px rgba(106, 17, 203, 0.3));
+  box-shadow: 0 10px 30px rgba(106, 17, 203, 0.3);
   max-width: 900px;
   position: relative;
   overflow: hidden;
@@ -84,29 +84,27 @@ body {
 
 .header p {
   margin: 1rem 0 0;
-  font-size: 1rem;
-  max-width: calc(100%-6rem);
-  position: relative;
+  font-size: 1rem; /* Фиксированный размер, не меняется на мобильных */
+  width: 100%; /* Занимает всю доступную ширину */
   font-weight: 400;
-  display: block;
-  text-align: justify;
-  padding-right: 2.5rem; /* Добавляем правый отступ как у header */
-  margin-left: 0; /* Сбрасываем левый margin */
-  hyphens: auto; /* Разрешаем переносы слов для красивого выравнивания */  
+  text-align: left; /* Отключаем выравнивание по ширине на всех устройствах */
+  hyphens: none; /* Запрещаем перенос слов */
+  word-break: normal; /* Стандартное поведение переноса */
+  padding: 0; /* Убираем внутренние отступы */
 }
 
 /* Стили для текста "Как формируется рейтинг?" */
 .rating-info-trigger {
   display: inline-block;
   color: #fff;
+  font-size: 1rem !important; /* Фиксированный размер, как у основного текста */
   text-decoration: underline;
   text-decoration-style: dotted;
-  text-decoration-color: currentColor;
   cursor: pointer;
-  margin: 8px 0 0 0;
-  padding: 2px 0;
-  transition: all 0.3s ease;
+  margin-top: 8px;
+  transition: color 0.3s ease;
   font-weight: 500;
+  white-space: nowrap; /* Запрещаем перенос */
 }
 
 .rating-info-trigger:hover {
@@ -459,10 +457,11 @@ input:focus {
 }
 
 /* Адаптивность */
+
 @media (max-width: 768px) {
   .header {
-    padding: 1.8rem 1.8rem 1.8rem 5rem;
-    margin: 1rem;
+    padding: 1.5rem; /* Уменьшаем отступы на мобильных */
+    margin: 1rem auto;
     text-align: left;
   }
   
