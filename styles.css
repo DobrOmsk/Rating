@@ -456,12 +456,11 @@ input:focus {
   .header {
     padding: 1rem 0.8rem !important;
     margin: 1rem auto;
-    padding-left: 6rem !important; /* Больше места слева для лого */
   }
   
   .header h1 {
     font-size: 2rem;
-    padding-left: 7rem;
+    padding-left: 3.5rem;
     margin-left: 0;
   }
 
