@@ -85,11 +85,14 @@ body {
 .header p {
   margin: 1rem 0 0;
   font-size: 1rem;
-  max-width: 80%;
+  max-width: calc(100%-6rem);
   position: relative;
   font-weight: 400;
   display: block;
-  text-align: justify;;
+  text-align: justify;
+  padding-right: 2.5rem; /* Добавляем правый отступ как у header */
+  margin-left: 0; /* Сбрасываем левый margin */
+  hyphens: auto; /* Разрешаем переносы слов для красивого выравнивания */  
 }
 
 /* Стили для текста "Как формируется рейтинг?" */
