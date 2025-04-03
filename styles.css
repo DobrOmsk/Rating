@@ -542,7 +542,23 @@ input:focus {
   }
 
   .modal-content {
-    padding: 1.5rem;
+    padding: 1.2rem;
+    width: 95%; /* Чуть больше ширины на маленьких экранах */
+    max-height: 85vh; /* Меньшая высота на мобильных */
+  }
+  
+  .modal-content h3 {
+    font-size: 1.3rem;
+  }
+  
+  .modal-content p, 
+  .modal-content li {
+    font-size: 0.9rem; /* Уменьшаем размер текста */
+    line-height: 1.4; /* Увеличиваем межстрочный интервал */
+  }
+  
+  .modal-content ul {
+    padding-left: 1rem; /* Уменьшаем отступ списка */
   }
 }
 
