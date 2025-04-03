@@ -95,10 +95,14 @@ body {
 }
 
 .header a {
-  color: #ffeb3b; /* Желтый цвет как у "Как формируется рейтинг" */
-  text-decoration: underline;
-  transition: color 0.3s;
+  color: #540475;
+  text-decoration: none;
 }
+
+.contacts-footer a:hover {
+  text-decoration: underline;
+}
+
 
 .header a:hover {
   color: #6A11CB; /* Фиолетовый при наведении */
