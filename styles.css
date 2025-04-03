@@ -95,17 +95,12 @@ body {
 }
 
 .header a {
-  color: #540475;
+  color: #fff;
   text-decoration: none;
 }
 
-.contacts-footer a:hover {
-  text-decoration: underline;
-}
-
-
 .header a:hover {
-  color: #6A11CB; /* Фиолетовый при наведении */
+  color: #C484DD; /* Фиолетовый при наведении */
 }
 
 /* Стили для текста "Как формируется рейтинг?" */
