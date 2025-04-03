@@ -96,11 +96,12 @@ body {
 
 .header a {
   color: #fff;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .header a:hover {
   color: #C484DD; /* Фиолетовый при наведении */
+  text-decoration: underline;
 }
 
 /* Стили для текста "Как формируется рейтинг?" */
