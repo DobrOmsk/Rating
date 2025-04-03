@@ -190,7 +190,7 @@ tr:not(.first-place):not(.second-place):not(.third-place) td:not(:last-child)::a
   transform: translateY(-50%);
   width: 1px;
   height: 60%;
-  background: rgba(84, 4, 117, 0.1);
+  background: rgba(84, 4, 117, 0.3);
 }
 
 /* Линия-разделитель между заголовком и данными таблицы */
