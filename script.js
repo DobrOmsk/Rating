@@ -8,7 +8,9 @@ createApp({
       sortField: 'place',
       sortDirection: 'asc',
       visibleCount: 50,
-      showRatingInfo: false
+      showRatingInfo: false,
+      isLoading: true,
+      error: null
     }
   },
   computed: {
@@ -64,6 +66,7 @@ createApp({
     }
   },
   mounted() {
+    this.showRatingInfo = false;
     this.fetchData();
     setInterval(this.fetchData, 300000);
     this.updateAppHeight();
