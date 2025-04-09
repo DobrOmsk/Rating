@@ -641,18 +641,23 @@ table {
 .documents-links {
   margin-top: 20px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   gap: 10px;
+  color: #888; /* Светло-серый цвет для текста */
 }
 
 .documents-links a {
-  color: #2c3e50;
+  color: #888; /* Светло-серый цвет для ссылок */
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
 }
 
 .documents-links a:hover {
-  color: #1a73e8;
+  color: #666; /* Чуть темнее при наведении */
   text-decoration: underline;
+}
+
+.divider {
+  color: #aaa; /* Цвет разделителя */
 }
