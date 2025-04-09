@@ -639,25 +639,28 @@ table {
 }
 
 .documents-links {
-  margin-top: 20px;
+  margin: 20px auto 0; /* Центрирование по горизонтали */
   display: flex;
+  justify-content: center; /* Центрирование содержимого */
   align-items: center;
   gap: 10px;
-  color: #888; /* Светло-серый цвет для текста */
+  color: #888;
+  max-width: 90%; /* Чтобы не прижималось к краям на мобильных */
 }
 
 .documents-links a {
-  color: #888; /* Светло-серый цвет для ссылок */
+  color: #888;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
+  white-space: nowrap; /* Чтобы текст не переносился */
 }
 
 .documents-links a:hover {
-  color: #666; /* Чуть темнее при наведении */
+  color: #666;
   text-decoration: underline;
 }
 
 .divider {
-  color: #aaa; /* Цвет разделителя */
+  color: #aaa;
 }
