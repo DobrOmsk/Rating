@@ -2952,25 +2952,25 @@
     "points":11
   },
   {
-    "place":185,
+    "place":150,
     "name":"Жусупова Адина Саматовна",
     "events":1,
     "points":7
   },
   {
-    "place":75,
+    "place":99,
     "name":"Чикишева Виктория Игоревна",
     "events":4,
     "points":63
   },
   {
-    "place":185,
+    "place":150,
     "name":"Юферов Дмитрий Витальевич",
     "events":1,
     "points":7
   },
   {
-    "place":101,
+    "place":115,
     "name":"Герасимова София Павловна",
     "events":3,
     "points":44
@@ -4020,9 +4020,9 @@
     "points":24
   },
   {
-    "place":155,
+    "place":140,
     "name":"Лаврухина Ольга",
-    "events":0,
-    "points":0
+    "events":1,
+    "points":17
   }
 ]
